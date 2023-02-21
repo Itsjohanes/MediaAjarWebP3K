@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="26"><page Index="1"><![CDATA[Looping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                              Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Materials
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                      Loops
+
+
+
+                                                                                                                                                                                      While Loop
+
+
+
+                                                                                                                                                                                      Do While Loop
+
+
+
+                                                                                                                                                                                      For Loop
+
+
+
+                                                                                                                                                                                      Nested Loop]]></page><page Index="3"><![CDATA[Part one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              Loop definition
+
+
+
+
+
+                              While Loop
+
+
+
+
+
+
+                              Do While Loop
+
+
+
+
+
+                              For Loop]]></page><page Index="4"><![CDATA[Loops                                                                                                       Two types of loops in computer programming:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    With a loop, a part of a                                                                                                 You know exactly how many times you
+
+                                                                                                                                                             have to repeat
+
+                               program is repeated over                                                                                                      You know the specific condition when to
+
+
+
+                                  and over,until a specific                                                                                                  stop the repetition, but you do not know
+
+
+
+
+                                              goal is reached.                                                                                               how many times to repeat the action to
+
+
+
+                                                                                                                                                             achieve that particular condition]]></page><page Index="5"><![CDATA[While Loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            As long as the condition is true, the statements will always
+
+
+
+            be repeated.
+
+
+
+            while is the best choice to perform repetition when it does
+
+
+
+            not know how many times it should be repeated (but do
+
+
+            know what the condition that should make the repetition to
+
+
+
+            stop)]]></page><page Index="6"><![CDATA[While Loop]]></page><page Index="7"><![CDATA[While More
+
+
+
+
+
+
+
+
+                                      Example]]></page><page Index="8"><![CDATA[What is output of this
+
+
+
+
+
+
+                                                     syntax?
+
+
+
+
+
+
+
+
+
+
+                                                     public static void main(String[] args){
+
+
+
+
+                                                         int res = 2;
+
+
+
+
+
+
+
+
+
+
+
+                                                        while(res%2!=0||res%3!=0||res%4!=0||res%5!=0){
+
+
+
+
+
+                                                           res+=1;
+
+
+
+
+                                                        }
+
+
+
+
+
+                                                        System.out.println(res);
+
+
+
+
+                                                     }]]></page><page Index="9"><![CDATA[Do While Loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            The statements inside the block will always be repeated as
+
+
+
+            long as the condition is true.
+
+
+
+            The do-while loop is appropriate when the loop body must
+
+
+
+            be executed at least once.]]></page><page Index="10"><![CDATA[Do While Loop
+
+
+
+
+
+
+
+
+
+
+
+                                                                           public static void main(String[] args){
+
+
+
+
+                                                                              Scanner sc = new Scanner(System.in);
+
+
+
+                                                                              int pilihan, a, b;
+
+
+
+
+                                                                              do{
+
+
+
+                                                                                 a = sc.nextInt();
+
+
+
+
+                                                                                 b = sc.nextInt();
+
+
+
+                                                                                 pilihan = sc.nextInt();
+
+
+
+
+                                                                                 if(pilihan==1){
+
+
+
+                                                                                   System.out.println(a-b);
+
+
+
+
+                                                                                 }
+
+
+
+
+                                                                                 else if(pilihan==2){
+
+
+
+                                                                                     System.out.println(a+b);
+
+
+
+                                                                                 }
+
+
+
+
+                                                                           }while(pilihan==1||pilihan==2);
+
+
+
+
+                                                                           }]]></page><page Index="11"><![CDATA[For Loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            initialization: one or more statements which are executed
+
+
+
+            only one time in the beginning of the iteration.The
+
+
+
+            counter/iterator usually initialize in the initialization
+
+
+
+            condition: decide whether the block statement will be
+
+
+            executed or not. If the expression returns false, then the
+
+
+
+            whole for statement is terminated and the program will
+
+
+
+            evaluate the next statement.
+
+
+            updater: statement which is executed after the block
+
+
+
+            statement is executed. The counter/iterator’s value usually
+
+
+
+            updated in the updater]]></page><page Index="12"><![CDATA[For Loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                          public static void main(String[] args){
+
+
+
+
+
+                                                                             int n = 3;
+
+
+
+
+
+
+                                                                             String result = "“;
+
+
+
+
+
+                                                                             for(int i = 1; i<=n; i++){
+
+
+
+
+
+                                                                                   System.out.print(i+" ");
+
+
+
+
+
+                                                                             }
+
+
+
+
+
+                                                                          System.out.println();
+
+
+
+
+
+                                                                          }]]></page><page Index="13"><![CDATA[Part two
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              Nested Loop
+
+
+
+
+
+                              Break & Continue]]></page><page Index="14"><![CDATA[Nested Loop Case
+
+
+
+
+
+
+
+
+                   Example
+
+
+
+
+
+
+
+
+
+
+
+                Here, we are using a for loop inside another for loop.
+
+
+
+
+
+                We can use the nested loop to iterate through each
+
+
+                day of a week for 3 weeks.
+
+
+
+
+
+
+                In this case, we can create a loop to iterate three
+
+
+                times (3 weeks). And, inside the loop, we can create
+
+
+                another loop to iterate 7 times (7 days).]]></page><page Index="15"><![CDATA[]]></page><page Index="16"><![CDATA[for loop inside
+
+
+
+
+
+
+
+
+                        the while loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    We can also create nested loops with while
+
+                                     and do...while in a similar way.]]></page><page Index="17"><![CDATA[]]></page><page Index="18"><![CDATA[Java nested loops to
+
+
+
+
+                        create a pattern
+
+
+
+
+
+
+
+
+
+
+                     We  can  use  the  nested  loop  in
+
+
+                     Java to create patterns like full
+
+
+                     pyramid, half pyramid, inverted
+
+
+
+                     pyramid,  and  so  on.  Here  is  a
+
+
+                     program  to  create  a  half
+
+
+
+                     pyramid  pattern  using  nested
+
+
+                     loops.]]></page><page Index="19"><![CDATA[]]></page><page Index="20"><![CDATA[Break
+
+
+
+
+
+
+
+
+
+                        The  if  break  statement  is
+
+
+                        executed  within  the  loop.  the
+
+
+                        loop                    statement                                   should                          be
+
+
+
+                        terminated immediately
+
+
+
+
+
+
+
+                        the                 program                                will                continue
+
+
+                        running  with  the  statement
+
+
+                        after the loop]]></page><page Index="21"><![CDATA[]]></page><page Index="22"><![CDATA[Use Break Inside While Loop]]></page><page Index="23"><![CDATA[Continue
+
+
+
+
+
+
+
+                        sometimes  you  may  want  to
+
+
+                        skip the current loop in the loop
+
+
+                        and  not  terminate  the  loop
+
+
+
+                        itself
+
+
+
+
+
+
+
+                        You  can  use  the  continue
+
+
+                        statement  to  skip  the  current
+
+
+                        loop in the loop
+
+
+
+
+
+
+
+                                  that  is,  the  remainder  of  the
+
+
+                                  loop  is  skipped  to  the  end  of
+
+
+                                  the  loop.  However  this  doesn't
+
+
+                                  end the loop
+
+
+                                  when  the  program  reaches  the
+
+
+                                  end of the loop it will again test
+
+
+                                  the loop continuation condition]]></page><page Index="24"><![CDATA[]]></page><page Index="25"><![CDATA[]]></page><page Index="26"><![CDATA[Finish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Continue by Excercises]]></page></pages></Search>
