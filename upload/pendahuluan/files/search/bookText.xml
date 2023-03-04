@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="27"><page Index="1"><![CDATA[U N I V E R S I T A S   P E N D I D I K A N   I N D O N E S I A
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                             Pendahuluan
+
+
+
+
+
+
+
+
+                                                                                                                                             Java & Variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                             Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Agenda                                                                                        1                 Pengantar Java
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                2                 Panduan Instalasi
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                3                 Variable
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                4                 Tipe Data]]></page><page Index="3"><![CDATA[1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 Pengantar Java]]></page><page Index="4"><![CDATA[Sejarah
+
+
+
+
+
+
+
+
+
+
+
+                   Pada tahun 1990, Sun Microsystems memulai
+
+
+
+                   proyek riset untuk memperluas daya komputasi
+
+
+
+                   jaringan ke perangkat konsumen, seperti perekam
+
+
+
+                   kaset video (VCR) dan televisi;
+
+
+
+
+
+
+
+                   Pemikiran saat itu adalah bahwa gelombang
+
+
+
+                   berikutnya dalam komputasi adalah bersatunya
+
+
+
+                   perangkat dan komputer konsumen digital;
+
+
+
+
+
+
+
+                   Ada juga rasa frustrasi akibat penggunaan bahasa
+
+
+
+                   C/C++ di Sun]]></page><page Index="5"><![CDATA[Sejarah
+
+
+
+
+
+
+
+
+
+                    The Green Team, tim pengembang
+
+
+
+
+                    perangkat lunak  di bawah kepemimpinan
+
+
+
+
+                    James Gosselin, mengembangkan Java
+
+
+
+
+                    (yang awalnya disebut sebagai Oak)]]></page><page Index="6"><![CDATA[Kenapa Harus Java?
+
+
+
+
+
+
+
+
+                                 Java adalah standar global untuk mengembangkan dan menghadirkan
+
+
+
+
+
+
+                                 aplikasi tertanam dan mobile, game, konten berbasis web, dan perangkat
+
+
+
+
+
+
+                                 lunak perusahaan;]]></page><page Index="7"><![CDATA[Riwayat Versi Java]]></page><page Index="8"><![CDATA[Program Komputer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Program komputer adalah sekumpulan instruksi yang berjalan pada komputer
+
+
+
+             atau perangkat digital lainnya;
+
+
+
+             Pada tingkat mesin, program ini terdiri dari instruksi biner (1 dan 0)
+
+
+
+
+             Sebagian besar program tertulis dalam kode tingkat tinggi (dapat dibaca)
+
+
+
+              Harus diterjemahkan ke kode mesin]]></page><page Index="9"><![CDATA[Translate Code Pada Java]]></page><page Index="10"><![CDATA[Program Java Berjalan di JVM]]></page><page Index="11"><![CDATA[Java Runtime Environment (JRE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         Termasuk :
+
+
+
+
+
+                         – Java Virtual Machine (JVM)
+
+
+
+
+                         – Perpustakaan class Java
+
+
+
+
+
+
+
+
+
+
+                         • Tujuan :
+
+
+
+
+
+                         – Membaca bytecode (.class)
+
+
+
+
+                         – Menjalankan bytecode yang
+
+
+
+
+
+                         sama kapan saja dengan JVM]]></page><page Index="12"><![CDATA[Java Development Kit (JDK)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Termasuk :
+
+
+
+
+
+                 – JRE
+
+
+
+
+
+                 – Pengompilasi Java
+
+
+
+
+
+                 – Alat tambahan
+
+
+
+
+
+
+
+
+
+
+
+                  Tujuan :
+
+
+
+
+
+                 – Mengompilasi bytecode (.java ->
+
+
+
+
+
+                 .class)]]></page><page Index="13"><![CDATA[Integrated Development Environment (IDE)
+
+
+
+
+
+
+
+
+
+                       Termasuk :
+
+
+
+
+
+                       – Menyediakan editor teks canggih
+
+
+
+
+
+                       – Menawarkan bantuan men-debug
+
+
+
+
+
+                       kode
+
+
+
+
+
+                       – Mengelola proyek
+
+
+
+
+
+                       – Menulis kode sumber (.java)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       Contoh: NetBeans, Intelij, Eclipse]]></page><page Index="14"><![CDATA[2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 Panduan Instalasi]]></page><page Index="15"><![CDATA[3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 Variable]]></page><page Index="16"><![CDATA[Apa Yang Dimaksud Dengan Variabel?
+
+
+
+
+
+
+
+
+
+
+
+                          Perimbangkan variabel    dalam persamaan
+
+
+
+                          Kita dapat menetapkan nilai apa pun ke   ]]></page><page Index="17"><![CDATA[Demikian juga, kita dapat menetapkan nilai pada variabel Java]]></page><page Index="18"><![CDATA[Kelemahan Tanpa Variabel
+
+
+
+
+
+
+
+
+
+                 • Kode tidak fleksibel
+
+
+
+
+                 • Untuk mengganti nama “Alex,” Anda harus melakukan banyak
+
+
+
+
+                 perubahan di banyak tempat :
+
+
+
+                 – Pengeditan yang melelahkan
+
+
+
+
+                 – Risiko kehilangan “Alex]]></page><page Index="19"><![CDATA[Keuntungan Dengan Variabel
+
+
+
+
+
+
+
+
+                 • Kode menjadi fleksibel
+
+
+
+
+                 – Mengingat dan memanipulasi nilai
+
+
+
+
+
+                 • Untuk mengganti nama “Alex,” Anda buat satu perubahan:
+
+
+
+
+
+                 – Pengeditan yang efisien
+
+
+
+
+
+                 – Tidak ada risiko kehilangan “Alex”]]></page><page Index="20"><![CDATA[Banyak Jenis Variabel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Variabel bisa saja ada untuk banyak jenisdata
+
+
+
+
+
+
+                 berbeda dalam Java
+
+
+
+
+
+                 • Berikut adalah variabel yang pernah Anda lihat:]]></page><page Index="21"><![CDATA[Menyatakan Variabel
+
+
+
+
+
+
+
+
+
+
+                  Java adalah bahasa “yang diketik dengan jelas”
+
+
+
+
+                 – Anda harus menyatakan jenis data apa yang dapat
+
+
+
+
+
+                 ditangani oleh variabel Anda dengan menggunakan
+
+
+
+
+
+                 kata kunci
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Setelah Anda menyatakan variabel:
+
+
+
+
+
+
+                 – Variabel tersebut akan muncul
+
+
+
+
+
+                 – Tidak perlu menyatakannya lagi]]></page><page Index="22"><![CDATA[Opsi untuk Menyatakan dan Menetapkan Nilai]]></page><page Index="23"><![CDATA[Kesalahan dengan Variabel]]></page><page Index="24"><![CDATA[Kesalahan dengan Variabel(2)]]></page><page Index="25"><![CDATA[Penamaan Variabel Yang Buruk
+
+
+
+
+
+
+
+
+
+
+                                         • Variabel tidak boleh diawali dengan angka
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            • Kata kunci tidak boleh digunakan untuk nama variabel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         • Variabel tidak boleh berbagi nama yang sama
+
+
+
+
+
+
+                         – Kata kunci berubah biru di NetBeans
+
+
+
+
+
+
+                         – Kata kunci memiliki makna khusus dalam Java]]></page><page Index="26"><![CDATA[Penamaan Variabel Yang Baik
+
+
+
+
+
+
+
+
+
+
+ • Mulailah setiap variabel dengan huruf kecil. Kata-kata berikutnya harus diawali dengan
+
+
+ huruf
+
+
+
+ besar:
+
+
+
+ – myVariable
+
+
+
+ • Pilih nama yang berbentuk mnemonik dan yang menunjukkan maksud dari variabel
+
+
+ tersebut
+
+
+
+ kepada pengamat biasa
+
+
+
+ • Ingat bahwa …
+
+
+
+ – Nama peka huruf besar-kecil
+
+
+ – Nama tidak boleh meliputi white space]]></page><page Index="27"><![CDATA[Selesai...
+
+
+
+
+
+
+
+
+
+
+                                                                     Lanjut Pertemuan 2]]></page></pages></Search>
