@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="37"><page Index="1"><![CDATA[Pemrograman Berbasis Teks, Grafis, dan Multimedia
+
+
+             Method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Johannes Alexander Putra
+
+
+        Universitas Pendidikan Indonesia]]></page><page Index="2"><![CDATA[Hal-Hal yang akan dibahas
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Pendahuluan
+
+
+
+
+
+
+             •        Mengenal Method
+
+
+
+
+
+
+
+             •        Memanggil Method
+
+
+
+
+
+
+             •        Void Method
+
+
+
+
+
+
+             •        Modularisasi kode]]></page><page Index="3"><![CDATA[Bahasan I
+
+
+
+
+                                             Pendahuluan]]></page><page Index="4"><![CDATA[Permasalahan]]></page><page Index="5"><![CDATA[Permasalahan (Lanjutan)]]></page><page Index="6"><![CDATA[Solusi]]></page><page Index="7"><![CDATA[Bahasan II
+
+
+
+
+                                             Mengenal Method]]></page><page Index="8"><![CDATA[Definisi Method
+
+
+
+
+
+
+
+
+
+
+
+             •        Method adalah kumpulan pernyataan yang dikelompokkan Bersama untuk
+
+
+
+
+                      melakukan suatu operasi.]]></page><page Index="9"><![CDATA[Definisi Method Lanjut]]></page><page Index="10"><![CDATA[Method Signature
+
+
+
+
+
+
+
+
+
+
+
+             •        Method signature adalah kombinasi dari nama                                                                          metode dan daftar
+
+
+
+
+                      parameter.]]></page><page Index="11"><![CDATA[Formal Parameter
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Variabel yang didefinisikan dalam header metode
+
+
+
+
+
+                      dikenal sebagai formal parameters.]]></page><page Index="12"><![CDATA[Actual Parameter
+
+
+
+
+
+
+
+
+
+
+             •        Saat sebuah metode dipanggil, Anda memberikan nilai ke parameter. Nilai ini disebut
+
+
+
+
+                      sebagai parameter atau actual parameters.]]></page><page Index="13"><![CDATA[Return Value Type
+
+
+
+
+
+
+
+
+
+             •        Sebuah metode dapat mengembalikan nilai. returnValueType adalah tipe data dari nilai yang dikembalikan oleh
+
+
+
+
+                      metode. Jika metode tidak mengembalikan nilai, returnValueType adalah kata kunci void . Misalnya,
+
+                      returnValueType dalam metode utama adalah void.]]></page><page Index="14"><![CDATA[Bahasan III
+
+
+
+
+                                             Memanggil Method]]></page><page Index="15"><![CDATA[Memanggil Method
+
+
+
+
+
+
+
+
+
+
+
+             •        Menguji metode max
+
+
+
+
+             •        Program                ini       mendemonstrasikan                               pemanggilan                     metode               max           untuk
+
+
+
+
+
+                      mengembalikan nilai int terbesar]]></page><page Index="16"><![CDATA[Contoh:]]></page><page Index="17"><![CDATA[Bahasan IV
+
+
+
+
+                                             Void Method]]></page><page Index="18"><![CDATA[Void Method
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Jenis method ini tidak mengembalikan nilai. Method
+
+
+
+
+
+                      melakukan beberapa tindakan.]]></page><page Index="19"><![CDATA[Passing Parameter]]></page><page Index="20"><![CDATA[Pass by Value
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Program ini mendemonstrasikan nilai yang diteruskan
+
+
+
+
+
+                      ke method.]]></page><page Index="21"><![CDATA[Pass by Value (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+
+             • Pengujian Pass by Value
+
+
+
+
+
+
+             • Program ini mendemonstrasikan nilai yang diteruskan ke
+
+
+
+
+
+
+             method]]></page><page Index="22"><![CDATA[Pass by Value (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+             •        Ini berarti bahwa nilai parameter aktual (ketika variabel)
+
+
+
+
+
+                      disalin ke parameter formal.
+
+
+
+
+
+             •        Perubahan apa pun yang dilakukan pada parameter formal
+
+
+
+
+
+                      bersifat                                   lokal                    pada                     metode                          dan                   tidak
+
+
+
+
+                      memengaruhi/mengubah nilai parameter aktual.
+
+
+
+
+
+             •        Contoh klasik: Metode Swap.]]></page><page Index="23"><![CDATA[Contoh:]]></page><page Index="24"><![CDATA[Bahasan V
+
+
+
+
+                                             Modularisasi Code]]></page><page Index="25"><![CDATA[Modularisasi Code
+
+
+
+
+
+
+
+
+
+
+
+
+             • Method dapat digunakan untuk mengurangi pengkodean yang berlebihan
+
+
+
+
+             dan memungkinkan penggunaan kembali kode.
+
+
+
+
+
+             • Method juga dapat digunakan untuk memodulasi kode dan meningkatkan
+
+
+
+
+             kualitas program.]]></page><page Index="26"><![CDATA[Method Overloading
+
+
+
+
+
+
+
+
+
+
+                                         public static int max(int num1, int num2){
+
+                                            if (num1 > num2)
+
+                                               return num1;
+                                            else
+
+                                               return num2;
+
+                                          }
+
+
+
+                                          public static double max(double num1, double num2){
+
+                                            if (num1 > num2)
+
+                                               return num1;
+                                            else
+
+                                               return num2;
+
+                                          }]]></page><page Index="27"><![CDATA[Ambiguous Invocation
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Kadang-kadang mungkin ada dua atau lebih kecocokan yang mungkin
+
+
+                untuk pemanggilan suatu metode, tetapi compiler tidak dapat menentukan
+
+                kecocokan yang paling spesifik. Ini disebut sebagai Ambiguous Invocation.
+
+
+                Ambiguous Invocation adalah kesalahan kompilasi.]]></page><page Index="28"><![CDATA[Ambiguous Invocation Contoh]]></page><page Index="29"><![CDATA[Scope of Local Variables
+
+
+
+
+
+
+
+
+
+
+
+             •         Variabel lokal: variabel yang didefinisikan di dalam method.
+
+
+
+
+
+             •         Lingkup: bagian program di mana variabel dapat direferensikan.
+
+
+
+
+
+             •        Ruang lingkup variabel lokal dimulai dari deklarasinya dan
+
+
+
+
+                      berlanjut hingga akhir blok yang berisi variabel tersebut.
+
+
+
+
+             •        Sebuah variabel lokal harus dideklarasikan sebelum dapat
+
+
+
+
+                      digunakan.]]></page><page Index="30"><![CDATA[Scope of Local Variables (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+
+             Anda                      dapat                  mendeklarasikan variabel                                                          lokal dengan
+
+
+
+
+
+             nama yang                              sama beberapa kali di                                                    blok non-bersarang
+
+
+
+
+
+
+             yang                   berbeda                       dalam suatu method,                                                         tetapi                   Anda
+
+
+
+
+
+             tidak                  dapat mendeklarasikan variabel                                                                       lokal dua                          kali
+
+
+
+
+
+             dalamblok bersarang.]]></page><page Index="31"><![CDATA[Scope of Local Variables (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+             •        Variabel yang dideklarasikan di bagian tindakan awal dari header loop for memiliki cakupannya di
+
+
+
+                      seluruh loop. Tetapi variabel yang dideklarasikan di dalam for loop body memiliki ruang lingkup yang
+
+
+                      terbatas di loop body dari deklarasi dan ke akhir blok yang berisi variabel]]></page><page Index="32"><![CDATA[Scope of Local Variables (Lanjutan)]]></page><page Index="33"><![CDATA[Scope of Local Variables (Lanjutan)]]></page><page Index="34"><![CDATA[Scope of Local Variables (Lanjutan)]]></page><page Index="35"><![CDATA[Method Abstraction
+
+
+
+
+
+
+
+
+
+
+
+             •        Anda dapat menganggap badan method sebagai kotak hitam yang berisi
+
+
+
+
+                      implementasi mendetail untuk method tersebut.]]></page><page Index="36"><![CDATA[Manfaat Method
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Menulis method sekali dan gunakan kembalidi mana
+
+
+
+
+
+                      saja.
+
+
+
+
+
+
+
+             •        Penyembunyian informasi. Sembunyikan implementasi
+
+
+
+
+
+                      dari pengguna.
+
+
+
+
+
+
+             •        Mengurangi kompleksitas.]]></page><page Index="37"><![CDATA[Referensi
+
+
+
+
+
+
+
+
+
+
+             •        Liang. (2015). Introduction to Java Programming Comprehensive Version 10 Edition.
+
+
+
+                      Pearson
+
+
+             •        Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+
+             •        Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5 edition. Addison Wesley
+                                                                                                                             th
+
+
+             •        Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar. Bandung : Modula
+
+
+
+             •        https://www.youtube.com/watch?v=tTxTNRDE5cQ&list=PL1iwRhfVnsHnZo6VACi0mIxiitU
+
+
+
+                      gD124h [Erlangga Studio]]]></page></pages></Search>
