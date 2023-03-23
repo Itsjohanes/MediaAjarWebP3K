@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="36"><page Index="1"><![CDATA[Branching
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Material
+
+
+
+
+
+
+
+
+
+
+
+
+            • Intro
+
+
+
+
+
+
+            • Relational Operator
+
+
+
+
+
+
+            • Branching]]></page><page Index="3"><![CDATA[Intro]]></page><page Index="4"><![CDATA[Intro
+
+
+
+
+
+
+
+
+
+
+
+            o One of the essential features of computer programs is their ability to make decisions.
+
+
+
+            o Like a train that changes tracks depending on how the switches are set, a program can take
+
+
+
+                   different actions depending on inputs and other circumstances.]]></page><page Index="5"><![CDATA[Intro (2)
+
+
+
+
+
+
+
+
+
+
+            •      Example:
+
+
+
+            •      The university bookstore has a Kilobyte Day sale every October 24, giving an 8 percent
+
+
+
+
+                   discount on all computer accessory purchases if the price is less than $128, and a 16
+
+
+                   percent discount if the price is at least $128. Write a program that asks the cashier for the
+
+
+
+                   original price and then prints the discounted price.]]></page><page Index="6"><![CDATA[Intro(3)
+
+
+
+
+
+
+
+
+
+
+            •      Solution:
+
+
+
+
+            o Check whether a condition is true or false (using relational & logical expressions)→ Is the
+
+
+
+                  price less than $128? (the answer is true or false)
+
+
+
+            o Decide to choose only an alternative to be done and ignore any other alternative(s):
+
+
+
+                  branching.]]></page><page Index="7"><![CDATA[Relational Operator]]></page><page Index="8"><![CDATA[Relational Operator
+
+
+
+
+
+
+
+
+
+
+
+            o In order to make a decision, computer needs to know a condition that makes an alternative is
+
+
+
+                  chosen.
+
+
+
+            o In many cases, the condition involves comparing values.
+
+
+
+            o A relational operator tests the relationship between two values.
+
+
+
+            o A relational expressions is an expression using relational operator, the result of this
+
+
+
+                  expression is a boolean value.]]></page><page Index="9"><![CDATA[Relational Operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                Relational Operator
+
+                                                      Java                            Math Notation                             Description
+
+
+                                                        >                                       >                              Greater than
+
+
+                                                       >=                                       ≥                       Greater than or equal
+
+                                                        <                                       <                                Less than
+
+
+                                                       <=                                       ≤                         Less than or equal
+
+
+                                                       ==                                       =                                   Equal
+
+                                                        !=                                      ≠                                Not equal]]></page><page Index="10"><![CDATA[Relational Operator
+
+
+
+
+
+
+
+
+
+
+
+            • Example in Codepad
+
+
+                                         1.int a=10, b=20, c=30, d=40, e=50;
+
+                                         2.a==b
+
+                                         3.a!=b
+
+                                         4.a<b
+
+                                         5.c>d
+
+                                         6.d>=a
+
+                                         7.a<=b
+
+                                         8.(a+b)*c<(b-c)*d
+
+                                         9.(a-b)*3=7
+
+                                         10.(a-b)*3==7
+
+                                         11.(a+b)(a*c)!=e*d
+
+                                         12.(a+b)*(a*c)!=e*d]]></page><page Index="11"><![CDATA[Logical Expressions
+
+
+
+
+
+
+
+
+
+
+
+            o Logical/boolean value: TRUE or FALSE
+
+
+
+            o Logical Expression: an arrangement of identifier, literal (TRUE or FALSE), logical
+
+
+
+                  operators and/or relational expressions that can be evaluated to compute a logical value]]></page><page Index="12"><![CDATA[Logical Operator
+
+
+
+
+
+
+
+
+
+
+
+            o Logical operator takes logical expressions as operands
+
+
+
+            o Logical operator in Java : && (AND), || (OR) & ! (NOT)
+
+
+
+
+
+                                      A (expr)           B                  A && B            A || B              !A                !B
+                                                         (expr)
+
+
+
+                                      False              False              False             False              True               True
+
+
+
+                                      False              True               False             True               True               False
+
+
+                                      True               False              False             True               False              True
+
+
+                                      True               True               True              True               False              False]]></page><page Index="13"><![CDATA[Logical Operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        1.boolean a= true, b=false, c=true;
+
+                                        2.a&&b
+
+                                        3.b&&c
+
+                                        4.a||b
+
+                                        5.!a||!b
+
+                                        6.!a||b
+
+                                        7.(a&&b)||(!b&&c)
+
+                                        8.(!a||!b)&&(a||!b)||(b&&a&&!c)
+
+                                        9.!(a&&b)
+
+                                        10.b&&!a
+
+                                        11.!b&&(b||(a&&!c))]]></page><page Index="14"><![CDATA[Logical Operator
+
+
+
+
+
+
+
+
+
+
+            •      Exercise: what are the values of these expressions?
+
+
+
+                                         int pH=100, humidity=19;
+
+
+
+
+                                         1.(pH==100)&&(humidity<20)
+
+
+                                         2.(pH*humidity>pH/humidity)&&(humidity%2==0)
+                                         3.(pH!=0)&&(humidity>19)
+
+
+                                         4.(pH*0<0)&&(humidity*-1>=0)
+                                         5.(pH*0<0)||!(humidity*-1>=0)
+
+
+                                         6.(pH/pH!=1)||(humidity/pH>0)
+                                         7.(pH/pH!=1)||(humidity/pH>=0)]]></page><page Index="15"><![CDATA[Branching]]></page><page Index="16"><![CDATA[Branching
+
+
+
+
+
+
+
+
+
+
+
+            o Sequential control structure: computer executes each statements one after another
+
+
+
+            o Conditional control structure: allow computer to choose between (two) alternative
+
+
+
+                  executions
+
+
+
+            o Use a condition/boolean expression: a statement (logical expression) that is either true or
+
+
+
+                  false
+
+
+
+            o Java uses if, if-else, multiway-if-else and/or switch statements with an assertion to alter
+
+
+                  the flow of the program and create conditional control structure]]></page><page Index="17"><![CDATA[If statement
+
+
+
+
+
+
+
+
+
+
+
+            o The if statement is used to implement a decision
+
+
+
+            o When a condition is fulfilled, one set of statements is executed
+
+
+
+
+            o Syntax:
+                                                              if(condition) statement;]]></page><page Index="18"><![CDATA[If statement]]></page><page Index="19"><![CDATA[If Statement
+
+
+
+
+
+
+
+
+
+
+
+            If Statement example
+
+
+
+
+                                         1.        public static void main(String[] args){
+
+                                         2.          int length = sc.nextInt();
+
+
+                                         3.          if(length<0) length = 0;
+
+
+                                         4.          int price = length * 100;
+
+                                         5.        }
+
+
+
+
+
+
+                                       The length is converted to 0 only if length < 0]]></page><page Index="20"><![CDATA[Block Statements
+
+
+
+
+
+
+
+
+
+
+
+            o Compound/Block Statement: A list of statements enclosed in a pair of braces.
+
+
+
+            o Java treats compound statement as a single statement
+
+
+
+
+            o It is very useful to be used with different control structure
+
+
+
+            o Syntax of if statement using block statements:
+
+
+
+                                             if (conditions){
+
+
+
+
+
+                                                           statement(s);
+
+
+
+
+
+
+                                             }]]></page><page Index="21"><![CDATA[Block Statements
+
+
+
+
+
+
+
+
+
+
+
+
+            • Can you determine the differences between these
+
+
+
+
+
+                   codes?
+
+
+
+
+                              1    public static void main(String[] args){                          1     public static void main(String[] args){
+
+
+                              2      int tea = sc.nextInt();                                        2      int tea = sc.nextInt();
+
+                              3      if (tea<0||tea>100)                                            3      if (tea<0||tea>100){
+
+
+                              4          tea = 100 + tea;                                           4          tea = 100 + tea;
+
+
+                              5          tea = tea % 100;                                           5          tea = tea % 100;
+
+                              6    }                                                                6       }
+
+
+                                                                                                    7     }]]></page><page Index="22"><![CDATA[The if...else...Statement
+
+
+
+
+
+
+
+
+
+
+
+            o The if-else statement chooses between two alternatives statements
+
+
+
+            o Syntax:
+
+
+
+
+
+
+
+
+
+                                    if(expressions){
+
+                                              statement(s) A
+
+                                    }
+
+                                    else{
+
+                                              statement(s) B
+
+                                    }]]></page><page Index="23"><![CDATA[The if...else...Statement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 1     public static void main(String[] args){
+
+
+                                                                 2      int tea = sc.nextInt();
+
+
+                                                                 3      if (tea%2==1){
+
+                                                                 4          tea /= 2;
+
+
+                                                                 5      }
+
+
+                                                                 6      else{
+
+                                                                 7         tea*=2;
+
+
+                                                                 8       }
+
+
+                                                                 9     }]]></page><page Index="24"><![CDATA[Conditional Operator
+
+
+
+
+
+
+
+
+
+
+
+            o Conditional operator: ternary operator or arithmetic if
+
+
+
+            o Takes three operand
+
+                                                           Expression1? Expression2: Expression3
+
+            o Syntax:
+
+
+
+            o if Expression1 is TRUE then the computer will execute Expression2, but if Expression1 is
+
+
+                  FALSE then the computer will execute Expression3]]></page><page Index="25"><![CDATA[Conditional Operator
+
+
+
+
+
+
+
+
+
+
+
+            o Conditional operator example
+
+
+
+
+                                                  1       public static void main(String[] args){
+
+
+                                                  2        int tea = sc.nextInt();
+
+
+                                                  3        tea = (tea%2==1)?tea*2:tea/2;
+
+                                                  4       }]]></page><page Index="26"><![CDATA[Case
+
+
+
+
+
+
+
+
+
+            •      The Richter scale is a measurement of the strength of an earthquake. Every step in the scale, for
+
+
+
+
+                   example from 6.0 to 7.0, signifies a tenfold increase in the strength of the quake. We can categorize
+
+
+                   the scale into 5 categories: Category A (most structures fall), B (many buildings destroyed), C (many
+
+
+                   buildings considerably damaged, some collapse), D (damage to poorly constructed buildings), and E
+
+
+                   (no destruction of buildings). Write the program to categorize the Ritcher scale!]]></page><page Index="27"><![CDATA[Multi If-Else
+
+
+
+
+
+
+
+
+
+
+
+            • Is it enough to use only if-else structure to solve the previous
+
+
+
+
+
+                   problem?
+
+
+
+
+
+            • We need more than one conditions to categorize the Ritcher
+
+
+
+
+                   scale.
+
+
+
+
+
+            • Solution: use multiway if-else or nested if]]></page><page Index="28"><![CDATA[Multiway if..else...
+
+
+
+
+
+
+
+
+
+
+
+                                     • Syntax for multiway if-else
+
+
+
+
+                                          if (condition1){
+
+                                                statements;
+                                          }
+                                          else if(condition2){
+
+                                                statements;
+                                          }
+
+                                          else if(condition3){
+                                                statemens;
+                                          }
+
+                                          ...
+                                          ...
+
+                                          else{
+                                                statements;
+                                          }]]></page><page Index="29"><![CDATA[Ritcher Scale Solution
+
+
+
+
+
+
+
+
+
+
+                                         Source Code: Ritcher Scale
+
+
+                                         import java.util.Scanner;
+                                         public class Main{
+
+                                            public static void main(String[] args){
+                                              Scanner sc = new Scanner(System.in)
+
+                                              double scale = sc.nextDouble();
+                                              char category;
+                                              if(scale >= 8.0) category = 'A’;
+
+                                              else if(scale >= 7.0)  category = 'B’;
+                                              else if(scale >= 6.0) category = ‘C’;
+
+                                              else if(scale >= 4.5) category = 'D’;
+                                              else category = ‘E’;
+                                              System.out.println(category);
+
+                                            }
+                                         }]]></page><page Index="30"><![CDATA[switch Statement
+
+
+
+
+
+
+
+
+
+            •      switch is another control structure to implements multiway branches
+
+
+
+            •      Use switch expression (integer expression) to determine which branch to be executed
+
+
+
+            •      Use break statement to jump to the next statement after the switch statement
+
+
+
+
+            Before Java 7:
+
+
+            The type of the Expression must be char, byte, short, int. you can’t use String.
+
+
+
+            https://stackoverflow.com/questions/5198671/does-the-switch-statement-in-java-only-work-with-
+
+
+            integers
+
+
+            After Java 7: you can use String in switch]]></page><page Index="31"><![CDATA[]]></page><page Index="32"><![CDATA[Switch Statement
+
+
+
+
+
+
+
+
+
+
+
+                                     switch(expression) {
+
+
+
+
+                                        case case_label_1: statement(s); break;
+                                        case case_label_2: statement(s); break;
+
+                                        case case_label_3: statement(s); break;
+
+                                        . . . .
+                                        . . . .
+
+                                        case case_label_n: statement(s); break;
+
+                                        default: default_statement (s); break;
+
+
+
+                                     }]]></page><page Index="33"><![CDATA[Nested If
+
+
+
+
+
+
+
+
+
+
+
+            • It is often necessary to include an if statement inside another.
+
+
+
+
+                   Such an arrangement is called a nested set of statements.
+
+
+
+
+            • Put an if statements within another if statement : nested
+
+
+
+
+                   control structure
+
+
+
+
+
+            • In general, any problem that involves a multiway branch can
+
+
+
+
+                   be solved (coded) using Nested-if (including multiway if-else
+
+
+
+
+                   and switch)]]></page><page Index="34"><![CDATA[Nested IF Flowchart Diagram]]></page><page Index="35"><![CDATA[Switch Example
+
+
+
+
+
+
+
+
+
+
+                                            Source Code: Switch Example
+
+                                            import java.util.Scanner;
+                                            public class Main
+                                            {
+
+                                               public static void main(String[] args){
+                                                  Scanner sc = new Scanner(System.in);
+                                                  byte monthNum = sc.nextByte();
+                                                  String monthName="";
+                                                  switch(monthNum){
+                                                    case 1: monthName = "January";break; case 2: monthName = "February";break;
+                                                    case 3: monthName = "March";break; case 4: monthName = "April";break;
+                                                    case 5: monthName = "May";break; case 6: monthName = "June";break;
+                                                    case 7: monthName = "July";break; case 8: monthName = "August";break;
+
+                                                    case 9: monthName = "September";break; case 10: monthName = "October";break;
+                                                    case 11: monthName = "November";break; default: monthName="December";break;
+                                                  }
+                                                  System.out.println(monthName);
+                                               }
+                                            }]]></page><page Index="36"><![CDATA[Reference
+
+
+
+
+
+
+
+
+
+            •      Liang. (2015). Introduction to Java Programming Comprehensive Version 10
+
+
+
+
+                   Edition. Pearson
+
+
+            •      Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+
+            •      Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5                                                                    th   edition. Addison
+
+
+
+                   Wesley
+
+
+            •      Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar. Bandung :
+
+
+
+
+                   Modula
+
+
+            •      https://www.youtube.com/watch?v=tTxTNRDE5cQ&list=PL1iwRhfVnsHnZo6VACi0
+
+
+
+                   mIxiitUgD124h [Erlangga Studio]]]></page></pages></Search>
