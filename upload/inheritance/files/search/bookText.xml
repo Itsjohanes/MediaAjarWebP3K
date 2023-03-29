@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="35"><page Index="1"><![CDATA[Pemrograman Berbasis Teks,
+
+
+             Grafis, dan Multimedia
+
+
+
+         Inheritance &
+
+
+
+
+
+         Polimorphisme
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Materi
+
+
+
+
+
+
+
+             •        Inheritance
+
+
+             •        Superclasses dan Subclasses
+
+             •        Penggunaan Keyword Supper
+
+
+             •        Overriding Methods
+
+
+             •        Overriding vs. Overloading
+
+             •        Polymorphism
+
+
+             •        Protected Data dan Methods
+
+
+             •        Preventing Extending dan Overriding
+
+             •        Inner & Outer Class]]></page><page Index="3"><![CDATA[Bahasan 1
+
+
+
+
+                                             Inheritance]]></page><page Index="4"><![CDATA[Pendahuluan
+
+
+
+
+
+
+
+
+
+
+
+
+                   • Pemrograman berorientasi objek memungkinkan Anda untuk
+
+                   mendefinisikan kelas baru dari kelas yang ada. Ini disebut inheritance.
+
+
+                   • Di Java, dimungkinkan untuk mewarisi atribut dan metode dari satu kelas
+
+
+                   ke kelas lainnya. Kami mengelompokkan "inheritance concept" ke dalam
+
+                   dua kategori:
+
+
+                   – subclass (anak) - kelas yang mewarisi dari kelas lain
+
+                   – superclass (induk) - kelas yang diwarisi dari
+
+
+                   • Untuk mewarisi dari kelas, gunakan kata kunci extends.]]></page><page Index="5"><![CDATA[Contoh
+
+
+
+
+
+
+
+
+
+
+
+
+             • Pada contoh di bawah, kelas Car (subclass) mewarisi
+
+
+
+
+
+             atribut dan metode dari kelas Vehicle (superclass):]]></page><page Index="6"><![CDATA[Bahasan 2
+
+
+
+
+                                             Superclasses & Subclasses]]></page><page Index="7"><![CDATA[Superclasses dan Subclasses
+
+
+
+
+
+
+
+
+
+
+                 Inheritance memungkinkan Anda untuk mendefinisikan kelas umum
+
+
+                 (yaitu, superclass) dan kemudian meng-extendnya ke kelas yang lebih
+
+                 khusus (yaitu, subclass)]]></page><page Index="8"><![CDATA[Constructor Superclass
+
+
+
+
+
+
+
+
+                      Tidak. Mereka tidak diwariskan.
+
+                     • Mereka dipanggil secara eksplisit atau implisit.
+
+                     • Secara eksplisit menggunakan keyword super.
+
+                     • Sebuah Constructor digunakan untuk membangun sebuah instance dari Class.
+
+                     Tidak seperti properti dan metode, Constructor superclass tidak diwarisi dalam
+
+                     subclass. Mereka hanya dapat dipanggil dari Constructor subclass, menggunakan
+
+                     keyword super. Jika keyword super tidak digunakan secara eksplisit, konstruktor no-
+
+                     arg superclass secara otomatis dipanggil.]]></page><page Index="9"><![CDATA[Constructor Superclass Selalu Dipanggil
+
+
+
+
+
+
+
+
+
+             •        Constructor dapat memanggil Constructor yang kelebihan beban atau Constructor superclass-nya.
+
+
+
+                      Jika tidak ada yang dipanggil secara eksplisit, compiler menempatkan super() sebagai pernyataan
+
+
+                      pertama di konstruktor. Sebagai contoh,]]></page><page Index="10"><![CDATA[Bahasan 3
+
+
+
+
+                                             Menggunakan Keyword Super]]></page><page Index="11"><![CDATA[Menggunakan Keyword Super
+
+
+
+
+
+
+
+
+
+
+
+                            Keyword super mengacu pada superclass dari  kelas  di
+
+
+                            mana super muncul.Kata kunci ini dapat digunakan
+
+
+                            dengan dua cara:
+
+
+
+                            •    Untuk memanggil constructor superclass
+
+
+                            •    Untuk memanggil method superclass]]></page><page Index="12"><![CDATA[Constructor Chaining]]></page><page Index="13"><![CDATA[Mendefinisikan Subclass
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Tambahkan properti baru
+
+
+
+
+
+
+             •        Tambahkan method baru
+
+
+
+
+
+
+
+             •        Ganti method superclass]]></page><page Index="14"><![CDATA[Memanggil Superclass Methods
+
+
+
+
+
+
+
+
+
+
+
+             •        Kata kunci super juga dapat digunakan untuk mereferensikan
+
+
+
+
+
+                      method selain constructor di superclass. Sintaksnya adalah:
+
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Anda bisa menulis ulang method printCircle() di kelas Circle
+
+
+
+
+                      sebagai berikut:]]></page><page Index="15"><![CDATA[Bahasan 4
+
+
+
+
+                                             Overriding Method]]></page><page Index="16"><![CDATA[Overriding Methods di Superclass
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Subclass mewarisi metode dari superclass. Terkadang
+
+
+
+
+
+                      subclass perlu memodifikasi implementasi metode yang
+
+
+
+
+
+
+                      didefinisikan dalam superclass. Ini disebut sebagai
+
+
+
+
+
+                      metode overriding.]]></page><page Index="17"><![CDATA[Notes
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Instance method dapat diganti hanya jika dapat diakses.
+
+
+
+
+
+                      Jadi method private tidak dapat diganti, karena tidak
+
+
+
+
+                      dapat diakses di luar classnya sendiri. Jika method yang
+
+
+
+
+
+                      didefinisikan dalam subclass bersifat private di kelas
+
+
+
+
+
+                      supernya, kedua metode tersebut sama sekali tidak
+
+
+
+
+                      terkait.]]></page><page Index="18"><![CDATA[Notes (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Seperti                     method                        instance,                        method                        static                 dapat
+
+
+
+
+
+                      diwariskan. Namun, method static tidak dapat diganti.
+
+
+
+
+
+
+                      Jika method static yang didefinisikan di superclass
+
+
+
+
+
+                      didefinisikan                              ulang                    di           subclass,                          method                        yang
+
+
+
+
+
+                      didefinisikan di superclass di hidden.]]></page><page Index="19"><![CDATA[Bahasan 5
+
+
+
+
+                                             Overriding vs. Overloading]]></page><page Index="20"><![CDATA[Overriding vs Overloading
+
+
+
+
+
+
+
+
+
+
+             •        Overloading berarti mendefinisikan beberapa method dengan nama yang sama tetapi signatures
+
+
+
+                      yang berbeda.
+
+
+             •        Overriding berarti menyediakan implementasi baru untuk sebuah method di subclass.]]></page><page Index="21"><![CDATA[Bahasan 6
+
+
+
+
+                                             Polimorphisme]]></page><page Index="22"><![CDATA[Polymorphism
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Polimorfisme berarti "banyak bentuk", dan itu terjadi
+
+
+
+
+
+                      ketika kita memiliki banyak kelas yang terkait satu sama
+
+
+
+
+
+
+                      lain melalui inheritance.
+
+
+
+
+
+
+             •        Polimorfisme berarti bahwa variabel supertipe dapat
+
+
+
+
+
+                      merujuk ke objek subtipe.]]></page><page Index="23"><![CDATA[Contoh Polymorphism
+
+
+
+
+
+
+
+
+
+
+             •        Sebuah kelas mendefinisikan sebuah tipe. Tipe yang didefinisikan oleh subkelas disebut subtipe,
+
+
+
+                      dan tipe yang ditentukan oleh superkelasnya disebut supertipe. Oleh karena itu, Anda dapat
+
+
+                      mengatakan bahwa Circle adalah subtipe dari GeometricObject dan GeometricObject adalah
+
+
+                      supertype dari Circle.]]></page><page Index="24"><![CDATA[Bahasan 7
+
+
+
+
+                                             Preventing Extending dan Overriding]]></page><page Index="25"><![CDATA[Protected Data dan Methods
+
+
+
+
+
+
+
+
+
+
+             •        protected modifier dapat diterapkan pada data dan method di class. Data yang dilindungi atau
+
+
+
+                      method yang protected dalam class public dapat diakses oleh class mana pun dalam package yang
+
+
+                      sama atau subclassesnya, bahkan jika subclasses tersebut berada dalam package yang berbeda.
+
+
+             •        private, default, protected, public]]></page><page Index="26"><![CDATA[Accessibility Summary]]></page><page Index="27"><![CDATA[Visibility Modifiers]]></page><page Index="28"><![CDATA[A                    Subclass                                          Cannot                                    Weaken                                       the
+
+
+
+
+            Accessibility
+
+
+
+
+
+
+
+
+             •        Subclass                      dapat                override                    method                    yang               dilindungi                     di
+
+
+
+
+
+                      superkelasnya dan mengubah visibilitasnya menjadi public.
+
+
+
+
+                      Namun, subclass tidak dapat weaken accessibility method
+
+
+
+
+
+                      yang ditentukan dalam superclass. Misalnya, jika suatu
+
+
+
+
+
+                      method didefinisikan sebagai public di superclass, itu harus
+
+
+
+
+
+                      didefinisikan sebagai public di subclass.]]></page><page Index="29"><![CDATA[Menggunakan Final Method]]></page><page Index="30"><![CDATA[Bahasan 8
+
+
+
+
+                                             Pengantar Inner Class & Outer Class]]></page><page Index="31"><![CDATA[Inner Class
+
+
+
+
+
+
+
+
+
+
+
+             •        In Java, it is also possible to nest classes (a class
+
+
+
+
+                      within a class). The purpose of nested classes is to
+
+
+
+
+                      group classes that belong together, which makes
+
+
+
+
+                      your code more readable and maintainable.
+
+
+
+
+
+             •        To access the inner class, create an object of the
+
+
+
+                      outer class, and then create an object of the inner
+
+
+
+
+                      class:]]></page><page Index="32"><![CDATA[Example]]></page><page Index="33"><![CDATA[Static Inner Class
+
+
+
+
+
+
+
+
+
+
+
+
+             •        An inner class can also be static, which means that you
+
+
+
+
+
+                      can access it without creating an object of the outer
+
+
+
+
+
+
+                      class:]]></page><page Index="34"><![CDATA[Example]]></page><page Index="35"><![CDATA[Referensi
+
+
+
+
+
+
+
+
+
+
+             •        Liang. (2015). Introduction to Java Programming Comprehensive Version 10
+
+
+
+                      Edition. Pearson
+
+
+
+             •        Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+
+             •        Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5                                                                  th   edition. Addison
+
+
+
+
+                      Wesley
+
+
+             •        Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar. Bandung :
+
+
+
+                      Modula
+
+
+
+             •        https://www.w3schools.com/java/java_inner_classes.asp]]></page></pages></Search>
