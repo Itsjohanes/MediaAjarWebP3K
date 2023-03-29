@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="47"><page Index="1"><![CDATA[Pemrograman Berbasis
+
+
+                     Teks, Grafis, dan
+
+                     Multimedia
+
+
+
+
+
+        Object & Class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Materi Bagian 1
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Pendahuluan
+
+
+
+
+
+
+             •        Class & Object
+
+
+
+
+
+
+
+             •        Constructor]]></page><page Index="3"><![CDATA[Bagian 1
+
+
+
+
+                                             Pendahuluan]]></page><page Index="4"><![CDATA[Paradigma                                              Pemrograman                                                         Berorientasi
+
+
+
+
+            Object
+
+
+
+
+
+
+             Apa itu OOP? OOP atau (Object-Oriented Programming) adalah suatu paradigma
+
+
+             dalam pemrograman yang berbasis pada obyek. OOP terinsiprasi dari model yang
+
+
+
+             telah ada di kehidupan sehari-hari. Contoh saja seperti mobil, mobil merupakan
+
+
+             suatu objek. Mobil terbentuk dari beberapa objek yang lebih kecil seperti roda, body,
+
+
+             mesin dll. Objek yang terdapat pada mobil saling berhubungan, berinteraksi dan
+
+
+
+             berkomunikasi. Melalui konsep di atas, OOP diciptakan untuk mempermudah
+
+
+             pengembangan program dengan cara mengikuti pendekatan model objek yang telah
+
+
+             ada dikehidupan sehari-hari.]]></page><page Index="5"><![CDATA[Pemrograman Prosedural vs Pemrograman
+
+
+
+
+            OOP
+
+
+
+
+
+
+             Pemrograman                                   Prosedural                            adalah                    pemrograman                                   yang
+
+
+
+
+             membagi-bagi                                proses                  yang                dilakukan                      program                      menjadi
+
+
+
+
+             prosedur-prosedur atau fungsi-fungsi.
+
+
+
+
+
+             Pemrograman Berorientasi Objek membagi kode program
+
+
+
+
+             menjadi kelas-kelas yang dibuat berdasarkan objek yang
+
+
+
+
+             terlibat dalam pengembangan program. Prosedur dan Fungsi
+
+
+
+
+             dalam pemrograman OOP dinamakan method.]]></page><page Index="6"><![CDATA[Ilustrasi Peminjaman VCD (Sukamto, 2010)]]></page><page Index="7"><![CDATA[Syarat umum Bahasa yang mendukung OOP
+
+
+
+
+
+
+
+
+
+
+
+             •        Mendukung Enkapsulasi
+
+
+
+
+
+
+             •        Mendukung Inheritance
+
+
+
+
+
+
+
+             •        Mendukung Polimorfisme
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Java mendukung ketiganya]]></page><page Index="8"><![CDATA[Bagian 2
+
+
+
+
+                                             Class dan Object]]></page><page Index="9"><![CDATA[Class & Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Sebuah objek memiliki keadaan dan perilaku. Status mendefinisikan objek,
+
+                          dan perilaku mendefinisikan apa yang dilakukan objek.]]></page><page Index="10"><![CDATA[Class
+
+
+
+
+
+
+
+
+
+             •        Class merupakan bagian dari turunan obyek yang berfungsi sebagai wadah atau cetakan untuk
+
+
+
+
+                      mendeskripsikan behavior/state yang didukung obyeknya. Behavior adalah tingkah laku yang dapat
+
+                      dilakukan oleh obyek. Behavior adalah kelakuan atau sifat dari obyek, misalnya lampu bisa dimatikan atau
+
+
+                      dinyalakan. State adalah kondisi atau keadaan yang bisa terjadi pada obyek misalnya lampu dapat memiliki state
+
+
+                      nyala atau mati.
+
+             •        Di kehidupan nyata kita mungkin sering menemukan banyak obyek, akan tetapi beberapa di antaranya memiliki
+
+
+
+                      kemiripan. Mungkin ada banyak kucing yang ada di dunia ini. Semua sama-sama memiliki bentuk yang sama.
+
+                      Bila diperhatikan ada banyak jenis kucing, mulai dari warna, bentuk hingga ras. Dalam aturan orientasi obyek,
+
+
+                      dapat dikatakan bahwa jenis, warna dan ras kucing di seluruh belahan dunia ini adalah sebuah kelas
+
+
+                      instance dari obyek yang dikenali sebagai kucing.]]></page><page Index="11"><![CDATA[Jadi Class itu..
+
+
+
+
+
+
+
+
+
+
+             •        Class adalah konstruksi yang mendefinisikan objek dari tipe yang sama.
+
+
+
+
+             •        Class Java menggunakan variabel/properti/atribut untuk mendefinisikan
+
+
+
+
+                      bidang data dan method untuk mendefinisikan perilaku.
+
+
+
+             •        Selain itu, kelas menyediakan jenis methods khusus, yang dikenal
+
+
+
+
+                      sebagai constructors, yang dipanggil untuk membangun objek dari
+
+
+
+                      kelas.]]></page><page Index="12"><![CDATA[Class (Lanjut)]]></page><page Index="13"><![CDATA[Class (Lanjut)]]></page><page Index="14"><![CDATA[Atribut/Variabel/Properti/Data Field
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Keadaan suatu objek                                                   (juga dikenal                                sebagai atribut,
+
+
+
+
+
+                      variabel, properti, atau data field) diwakili oleh bidang
+
+
+
+
+                      data dengan nilainya saat ini.
+
+
+
+
+
+
+             •        Objek                    lingkaran                         yang                  berasal dari                                class circle,
+
+
+
+
+
+                      misalnya, atribut, variabel, properti, atau data field yaitu
+
+
+
+
+
+                      radius dengan tipe data double bernilai 1]]></page><page Index="15"><![CDATA[Perilaku/Methods
+
+
+
+
+
+
+
+
+
+
+             •        Perilaku            suatu objek (juga dikenal                                   sebagai tindakannya) didefinisikan oleh
+
+
+
+                      method. Untuk memanggil method pada suatu objek                                                                   adalah meminta objek
+
+
+
+                      untuk melakukan suatu tindakan.
+
+
+             •        Misalnya,                Anda             dapat            mendefinisikan method bernama getArea() dan
+
+
+
+                      getPerimeter() untuk                             objek lingkaran. Objek                                lingkaran dapat memanggil
+
+
+
+                      getArea() untuk                            mengembalikan areanya                                    dan               getPerimeter() untuk
+
+
+                      mengembalikan perimeternya. Anda                                                     juga             dapat menentukan metode
+
+
+                      setRadius(radius). Objek lingkaran dapat memanggil metode ini untukmengubah
+
+
+
+                      radiusnya.]]></page><page Index="16"><![CDATA[Mendeklarasikan Variabel Referensi Object
+
+
+
+
+
+
+
+
+
+
+             •         Untuk mereferensikan object, tetapkan object ke variable
+
+
+
+
+
+                      referensi.
+
+
+
+
+
+             •        Untuk mendeklarasikan variabel referensi, gunakan sintaks:
+
+
+
+
+
+
+             ClassName objectRefVar;
+
+
+
+
+
+             •        Contoh:
+
+
+
+
+
+
+             Circle myCircle;]]></page><page Index="17"><![CDATA[Mendeklarasikan / Membuat Object dalam
+
+
+
+
+            Satu Langkah]]></page><page Index="18"><![CDATA[Bagian 3
+
+
+
+
+                                             Constructor]]></page><page Index="19"><![CDATA[Constructors
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Konstruktor adalah jenis metode khusus yang dipanggil
+
+
+
+
+
+                      untuk membangun objek.]]></page><page Index="20"><![CDATA[Constructors (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+             •        Constructor tanpa parameter disebut sebagai konstruktor no-arg
+
+
+
+
+             •        Constructor harus memiliki nama yang sama dengan Class itu sendiri.
+
+
+
+
+             •        Constructor tidak memiliki nilai kembalian (return) bahkan tidak ada
+
+
+
+
+                      void
+
+
+
+             •         Constructor dipanggil                                 menggunakan operator baru                                             ketika             sebuah
+
+
+
+
+                      objek dibuat. Constructor memainkan peran menginisialisasi objek.]]></page><page Index="21"><![CDATA[Default Constructors
+
+
+
+
+
+
+
+
+
+
+
+             •        Sebuah Class dapat didefinisikan tanpa Constructor.
+
+
+
+
+
+
+             •        Dalam hal ini, konstruktor no-arg dengan tubuh kosong
+
+
+
+
+
+
+             didefinisikan secara implisit di dalam Class.
+
+
+
+
+
+             •        Constructor ini, disebut konstruktor default, disediakan
+
+
+
+
+
+             secara otomatis hanya jika tidak ada Constructors yang
+
+
+
+
+
+             didefinisikan secara eksplisit di dalam kelas.]]></page><page Index="22"><![CDATA[Membuat                                                        Object                                               Menggunakan
+
+
+
+
+           Constructors]]></page><page Index="23"><![CDATA[Bagian 4
+
+
+
+
+                                             Class & Objek Bagian 2]]></page><page Index="24"><![CDATA[Materi Bagian 2
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Modifier
+
+
+
+
+
+
+             •        Encapsulation
+
+
+
+
+
+
+
+             •        This Reference]]></page><page Index="25"><![CDATA[Bagian 4
+
+
+
+
+                                             Modifier]]></page><page Index="26"><![CDATA[Access Modifiers
+
+
+
+
+
+
+
+
+
+
+
+
+             Access modifier adalah kemampuan membuat class, field,
+
+
+
+
+
+             method dan constructor dapat diakses darimana saja]]></page><page Index="27"><![CDATA[Access Modifiers
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Access modifiers berlaku kepada                                                                                class, attributes,
+
+
+
+
+
+                      methods and constructors.]]></page><page Index="28"><![CDATA[Access Modifiers (Lanjutan)]]></page><page Index="29"><![CDATA[Access Modifiers Attributes, Methods dan
+
+
+
+
+            Constructors]]></page><page Index="30"><![CDATA[Access Modifiers Attributes, Methods dan
+
+
+
+
+            Constructors (Lanjutan)]]></page><page Index="31"><![CDATA[Access Modifiers Attributes, Methods dan
+
+
+
+
+            Constructors (Lanjutan)]]></page><page Index="32"><![CDATA[Non-Access Modifiers
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Non-Access modifiers berlaku kepada class, attributes,
+
+
+
+
+
+                      dan methods.]]></page><page Index="33"><![CDATA[Non-Access Modifiers Class]]></page><page Index="34"><![CDATA[Non-Access Modifiers Class (Lanjutan)]]></page><page Index="35"><![CDATA[Non-Access Modifiers Attributes, Methods]]></page><page Index="36"><![CDATA[Non-Access Modifiers Attributes, Methods
+
+
+
+
+            (Lanjutan)]]></page><page Index="37"><![CDATA[Bagian 4
+
+
+
+
+                                             Encapsulation]]></page><page Index="38"><![CDATA[Encapsulation
+
+
+
+
+
+
+
+
+
+
+
+             Arti Encapsulation, adalah untuk memastikan bahwa data "sensitif" disembunyikan dari
+
+
+
+
+             pengguna. Untuk melakukan Encapsulation terdapat langkah - langkah yang dilakukan
+
+
+
+             antara lain:
+
+
+
+             • Mendeklarasikan variabel/atribut Class dengan access modifiers private.
+
+
+
+
+             • Menyediakan method get dan set dengan access modifiers public untuk
+
+
+
+             mengakses dan memperbarui nilai variabel/atribut Class yang memiliki access
+
+
+
+             modifiers private.]]></page><page Index="39"><![CDATA[Get dan Set
+
+
+
+
+
+
+
+
+
+
+             •        Sudah dijelaskan di slide sebelumnya bahwa variabel/atribut Class
+
+
+
+
+                      dengan access modifiers private hanya dapat diakses dalam Class
+
+
+
+                      yang sama (Class luar tidak memiliki akses ke variabel/atribut Class
+
+
+
+                      tersebut).
+
+
+
+             •        Namun,                    dimungkinkan                        untuk                mengaksesnya                           jika          disediakan
+
+
+
+
+                      method dengan access modifiers public .
+
+
+
+             •        Method                get mengembalikan                                 nilai         variabel,                  dan               method                set
+
+
+
+                      menetapkan nilai.]]></page><page Index="40"><![CDATA[Get dan Set (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+
+             •        intaks untuk keduanya adalah dimulai dengan get atau
+
+
+
+
+
+                      set, diikuti dengan nama variabel, dengan huruf
+
+
+
+
+
+
+                      pertama dalam huruf besar]]></page><page Index="41"><![CDATA[Get dan Set (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+             •        Metode get mengembalikan nilai dari nama variabel.
+
+
+
+             •        Metode set mengambil parameter (newName) dan menetapkannya ke variabel name. Keyword this
+
+
+
+
+                      digunakan untuk merujuk ke object saat ini.
+
+             •        Namun, karena variabel name dengan access modifiers private, maka tidak dapat diaksesnya dari
+
+
+
+
+                      luar kelas Main]]></page><page Index="42"><![CDATA[Get dan Set (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Sebagai gantinya, gunakan metode getName() dan
+
+
+
+
+
+                      setName() untuk mengakses dan memperbarui variable
+
+
+
+
+
+
+                      name:]]></page><page Index="43"><![CDATA[Mengapa                                                         Harus                                               Menggunakan
+
+
+
+
+            Encapsulation
+
+
+
+
+
+
+
+             •        Kendali yang lebih baik dari atribut dan method dari suatu Class
+
+
+
+
+             •        Atribut Class dapat dibuat read-only (jika hanya menggunakan
+
+
+
+
+                      metodeget), atau write-only (jika Anda hanya menggunakan
+
+
+
+                      metode set)
+
+
+
+
+             •        Fleksibel: programmer dapat mengubah satu bagian dari kode
+
+
+
+
+                      tanpa mempengaruhi bagian lain (To make code easy to maintain)
+
+
+
+
+             •         Peningkatan keamanan data]]></page><page Index="44"><![CDATA[Bagian 5
+
+
+
+
+                                             This Reference]]></page><page Index="45"><![CDATA[This Reference
+
+
+
+
+
+
+
+
+
+             •        Keyword this mengacu pada objek                     itu sendiri. Itu juga dapat digunakan di dalam konstruktor untuk                             memanggil
+
+
+
+                      constructor lain dari kelas yang sama.
+             •        Keyword this berlaku pada constructor dan method
+
+
+             •        Penggunaan paling umum dari kata kunci this adalah untuk menghilangkan kebingungan antara atribut kelas dan
+
+
+
+                      parameter dengan nama yang sama (karena atribut kelas dibayangi oleh method atau parameter constructor).
+             •        Keyword this juga dapat digunakan untuk:
+
+
+
+
+             –    Panggil konstruktor kelas saat ini
+
+
+             –    Panggil metode kelas saat ini
+
+
+             –    Kembalikan objek kelas saat ini
+
+
+             –    Berikan argumen dalam pemanggilan metode
+
+
+             –    Berikan argumen dalam panggilan konstruktor]]></page><page Index="46"><![CDATA[Contoh This Keyword]]></page><page Index="47"><![CDATA[Referensi
+
+
+
+
+
+
+
+
+
+             •        Liang. (2015). Introduction to Java Programming Comprehensive Version 10 Edition. Pearson
+
+
+             •        Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+             •        Sommerville, I. (2003). Rekayasa Perangkat Lunak Edisi 6 Jilid 1. Jakarta : Erlangga
+
+
+             •        Sommerville, I.(2003). Rekayasa Perangkat Lunak Edisi 6 Jilid 2. Jakarta : Erlangga
+
+
+             •        Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5 edition. Addison Wesley
+                                                                                                   th
+             •        Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar. Bandung : Modula
+
+
+             •        Sukamto, R.A. & Shalahudin (2010). Pemrograman Berorientasi Objek dengan Bahasa Pemrograman C++, Java, PHP.
+
+
+
+                      Bandung : Modula
+             •        Sukamto, R.A & Shalahuddin. (2018). Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek. Bandung :
+
+
+
+                      Informatika]]></page></pages></Search>
