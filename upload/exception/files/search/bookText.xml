@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="28"><page Index="1"><![CDATA[Pemrograman Berbasis Teks,
+
+
+                     Grafis, dan Multimedia
+
+
+            Exception
+
+
+
+
+
+            Handling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Materi
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Pengertian Eksepsi
+
+
+
+
+
+
+             •        Keuntungan Eksepsi]]></page><page Index="3"><![CDATA[Bagian 1
+
+
+
+
+                                             Pengertian Eksepsi]]></page><page Index="4"><![CDATA[Eksepsi
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Eksepsi merupakan keadaan yang tidak diharapkan
+
+
+
+
+
+                      saat program dijalankan, hal ini biasanya terjadi karena
+
+
+
+
+                      adanya kesalahan saat program dijalankan. Pada
+
+
+
+
+
+                      sebuah compiler/interpreter biasanya tidak menampilkan
+
+
+
+
+
+                      kesalahan saat program dijalankan, tiba-tiba program
+
+
+
+
+                      berhenti atau malah hang.]]></page><page Index="5"><![CDATA[Eksepsi
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Karena itu eksepsi diperlukan untuk menangkap error
+
+
+
+
+
+                      yang timbut pada saat program dijalankan (runtime).
+
+
+
+
+
+
+                      Eksepsi tujuannya untuk mempermudah penanganan
+
+
+
+
+
+                      error pada saat runtime dengan menampilkan pesan ke
+
+
+
+
+
+                      layar kesalahan yang sedang terjadi saat runtime.]]></page><page Index="6"><![CDATA[Bagian 2
+
+
+
+
+                                             Keuntungan Eksepsi]]></page><page Index="7"><![CDATA[Keuntungan dari Eksepsi
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Now you see the advantages of using exception
+
+
+
+
+
+                      handling. It enables a method to throw an exception to
+
+
+
+
+
+
+                      its caller. Without this capability, a method must handle
+
+
+
+
+
+                      the exception or terminate the program.]]></page><page Index="8"><![CDATA[Handling InputMismatchException
+
+
+
+
+
+
+
+
+
+
+
+
+             •        By handling InputMismatchException, your program will
+
+
+
+
+
+                      continuously read an input until it is correct.]]></page><page Index="9"><![CDATA[Exception Types]]></page><page Index="10"><![CDATA[System Errors]]></page><page Index="11"><![CDATA[Exceptions]]></page><page Index="12"><![CDATA[Checked                                        Exceptions                                              vs.                     Unchecked
+
+
+
+
+            Exceptions
+
+
+
+
+
+
+
+
+             •        RuntimeException, Error and their subclasses are
+
+
+
+
+
+                      known as unchecked exceptions. All other exceptions
+
+
+
+
+
+
+                      are known as checked exceptions, meaning that the
+
+
+
+
+
+                      compiler forces the programmer to check and deal with
+
+
+
+
+
+                      the exceptions.]]></page><page Index="13"><![CDATA[Declaring,                                            Throwing,                                            and                          Catching
+
+
+
+
+            Exceptions]]></page><page Index="14"><![CDATA[Declaring Exceptions
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Every method must state the types of checked exceptions it
+
+
+
+
+
+                      might throw. This is known as declaring exceptions.
+
+
+
+
+
+             •        public void myMethod() throws IOException
+
+
+
+
+
+
+             •        public void myMethod() throws IOException, OtherException]]></page><page Index="15"><![CDATA[Throwing Exceptions
+
+
+
+
+
+
+
+
+
+
+
+
+             •        When the program detects an error, the program can
+
+
+
+
+
+                      create an instance of an appropriate exception type and
+
+
+
+
+
+
+                      throw it. This is known as throwing an exception. Here is
+
+
+
+
+
+                      an example]]></page><page Index="16"><![CDATA[Throwing Exceptions Example]]></page><page Index="17"><![CDATA[Catching Exceptions]]></page><page Index="18"><![CDATA[The finally Clause]]></page><page Index="19"><![CDATA[Trace a Program Execution]]></page><page Index="20"><![CDATA[Trace a Program Execution]]></page><page Index="21"><![CDATA[Trace a Program Execution]]></page><page Index="22"><![CDATA[Trace a Program Execution]]></page><page Index="23"><![CDATA[Trace a Program Execution]]></page><page Index="24"><![CDATA[Trace a Program Execution]]></page><page Index="25"><![CDATA[Trace a Program Execution]]></page><page Index="26"><![CDATA[Trace a Program Execution]]></page><page Index="27"><![CDATA[Trace a Program Execution]]></page><page Index="28"><![CDATA[Referensi
+
+
+
+
+
+
+
+
+
+
+             •        Liang. (2015). Introduction to Java Programming Comprehensive
+
+
+
+
+                      Version 10 Edition. Pearson
+
+
+
+             •        Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+
+
+             •        Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5                                                                                  th   edition.
+
+
+
+
+                      Addison Wesley
+
+
+
+             •        Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar.
+
+
+
+
+                      Bandung : Modula]]></page></pages></Search>
