@@ -1,0 +1,1682 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="68"><page Index="1"><![CDATA[Pemrograman Berbasis Teks
+
+
+                     Grafis dan Multimedia
+
+
+            Abstract Class,
+
+
+
+
+
+            Interface &
+
+
+
+
+
+
+            Struktur Data
+
+
+
+
+
+
+
+
+                 Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Materi
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Pendahuluan
+
+
+
+
+
+
+             •        Abstract Class
+
+
+
+
+
+
+
+             •        Interface
+
+
+
+
+
+
+             •        Struktur Data]]></page><page Index="3"><![CDATA[Bahasan 1
+
+
+
+
+                                             Pendahuluan]]></page><page Index="4"><![CDATA[Pendahuluan
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Superclass                             mendefinisikan                                    perilaku                      umum                     untuk
+
+
+
+
+
+                      subclass terkait. Antarmuka (interface) dapat digunakan
+
+
+
+
+
+
+                      untuk mendefinisikan perilaku umum untuk kelas
+
+
+
+
+
+                      (termasuk kelas yang tidak terkait)]]></page><page Index="5"><![CDATA[Bagian 2
+
+
+
+
+                                             Abstract Class]]></page><page Index="6"><![CDATA[Abstract Class
+
+
+
+
+
+
+
+
+
+
+
+
+             •         Class abstract tidak dapat digunakan untuk membuat
+
+
+
+
+
+                      objek.
+
+
+
+
+
+
+
+             •         Class abstract dapat berisi metode abstrak, yang
+
+
+
+
+
+                      diimplementasikan dalam subclass secara konkret]]></page><page Index="7"><![CDATA[Abstract Classes dan Abstract Method]]></page><page Index="8"><![CDATA[Abstract Classes dan Abstract Method
+
+
+
+
+
+
+
+
+
+
+
+             •        Abstract method                                       tidak                dapat                  dimuat dalam                                    kelas
+
+
+
+
+                      nonabstract.                           Jika               subclass                      dari               superclass abstract
+
+
+
+
+                      tidak mengimplementasikan semua                                                                             method                       abstract,
+
+
+
+
+                      subclass harus                                   didefinisikan abstract.                                               Dengan                        kata
+
+
+
+
+                      lain,            dalam subclass nonbstract yang diperluas dari class
+
+
+
+
+                      bstract, semua method abstract harus diimplementasikan,
+
+
+
+
+                      bahkan jika tidakdigunakan dalam subclass.]]></page><page Index="9"><![CDATA[Object Tidak Dapat Dibuat di Class Abstract
+
+
+
+
+
+
+
+
+
+
+
+             •        Abstract Class tidak dapat diinstansiasi menggunakan
+
+
+
+
+
+                      operator new, tetapi Anda masih dapat mendefinisikan
+
+
+
+
+                      konstruktornya, yang dipanggil                                                                           dalam konstruktor
+
+
+
+
+
+                      subkelasnya. Misalnya,                                                                                                          konstruktor
+
+
+
+
+
+                      GeometricObjectdipanggil di class                                                                             Circle dan class
+
+
+
+
+                      Rectangle.]]></page><page Index="10"><![CDATA[Abstract Class Without Abstract Method
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Class yang berisi method abstract harus abstract. Namun,
+
+
+
+
+
+                      dimungkinkan                               untuk                   mendefinisikan                                 Class                    abstract
+
+
+
+
+                      yang tidak berisi methode abstract. Dalam hal ini, Anda
+
+
+
+
+
+                      tidak dapat membuat instance class                                                                                        menggunakan
+
+
+
+
+
+                      operator new. Class ini digunakan sebagai Class dasar
+
+
+
+
+
+                      untuk mendefinisikansubkelas baru.]]></page><page Index="11"><![CDATA[Superclass dari Abstract Class bisa saja
+
+
+
+
+            Konkrit
+
+
+
+
+
+
+
+             •        Subclass bisa saja abstrak meskipun superclassnya
+
+
+
+
+
+                      adalah konkrit. Misalnya class Object adalah konkret
+
+
+
+
+
+
+                      tetapi subclassnya seperti GeometricObject mungkin
+
+
+
+
+
+                      abstract]]></page><page Index="12"><![CDATA[Concrete Method Overriden to be Abstract
+
+
+
+
+
+
+
+
+
+
+
+             •        A          subclass                        can                  override                      a          method from                                      its
+
+
+
+
+
+                      superclass to define it abstract. Ini jarang terjadi, tetapi
+
+
+
+
+
+
+                      berguna ketika                                        implementasi metode                                                 di superclass
+
+
+
+
+
+                      menjadi tidak valid di subclass. Dalam halini, subclass
+
+
+
+
+
+                      harus didefinisikan abstract.]]></page><page Index="13"><![CDATA[Contoh
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Java Abstraction (w3schools.com)]]></page><page Index="14"><![CDATA[Bagian 3
+
+
+
+
+                                             Interface]]></page><page Index="15"><![CDATA[Interface
+
+
+
+
+
+
+
+
+
+
+             •        Cara lain untuk mencapai abstraksi di Java, adalah dengan Interfaces.
+
+
+
+
+                      Interfaces adalah “abstract class" sepenuhnya yang digunakan untuk
+
+
+
+                      mengelompokkan metode terkait dengan empty bodies.
+
+
+
+             •        Untuk                 mengakses                          metode                     interfaces,                     interfaces                     harus
+
+
+
+
+                      "diimplementasikan" (seperti yang diwarisi) oleh kelas lain dengan
+
+
+
+                      kata           kunci implements (bukan extends). Tubuh method interfaces
+
+
+                      disediakan oleh class "implements":]]></page><page Index="16"><![CDATA[Interface (Lanjutan)
+
+
+
+
+
+
+
+
+
+
+
+                   • Seperti class abstract, interface tidak dapat digunakan untuk
+
+
+                   membuat object.
+
+                   • Metode interfaces tidak memiliki badan - badan disediakan oleh
+
+
+                   kelas "implement“.
+
+                   • Pada implementasi interfaces, Anda harus mengganti semua
+
+
+                   metodenya.
+
+
+                   • Metode interfaces secara default abstract dan public.
+
+                   • Atribut interfaces secara default adalah public, static, dan final.
+
+
+                   •Interfaces tidak dapat berisi constructor (karena tidak dapat
+
+                   digunakan untuk membuat
+
+
+                   object);]]></page><page Index="17"><![CDATA[Why And When To Use Interfaces?
+
+
+
+
+
+
+
+
+
+
+
+             •        Untuk               mencapai                     keamanan -                          sembunyikan detail                                       tertentu
+
+
+
+
+                      danhanya tampilkan detail penting dari suatu objek (interface).
+
+
+
+
+             •        Java tidak                       mendukung "multiple                                        inheritance" (sebuah kelas
+
+
+
+
+
+                      hanya dapat mewarisi dari satu superclass). Namun, itu dapat
+
+
+
+                      dicapai dengan                                   interface,                          karena                         class                          dapat
+
+
+
+
+                      mengimplementasikan                                           banyak                   interface.                    Catatan:                     Untuk
+
+
+
+
+                      mengimplementasikan beberapainterface, pisahkan dengan koma.]]></page><page Index="18"><![CDATA[Example
+
+
+
+
+
+
+
+
+
+
+
+
+             •        https://www.w3schools.com/java/java_interface.asp]]></page><page Index="19"><![CDATA[Bagian 4
+
+
+
+
+                                             Abstract Classes vs Interfaces]]></page><page Index="20"><![CDATA[Interfaces vs. Abstract Classes
+
+
+
+
+
+
+
+
+
+
+             •        Dalam sebuah interfaces, data harus berupa konstanta; abstract class dapat memiliki semua jenis
+
+
+
+                      data.
+
+
+             •        Setiap method dalam interfaces hanya signature tanpa implementasi; abstract class dapat memiliki
+
+
+
+
+                      metode konkret.]]></page><page Index="21"><![CDATA[Bagian 4
+
+
+
+
+                                             Struktur Data Java]]></page><page Index="22"><![CDATA[Struktur Data
+
+
+
+
+
+
+
+
+
+
+
+             Sebuah bagian dalam ilmu pemrograman dasar di mana bertujuan untuk
+
+
+
+             membuat sebuah struktur penyimpanan data yang digunakan saat program
+
+
+
+             dijalankan. Struktur data berbeda dengan basis data.
+
+
+
+
+             Basis data merupakan ilmu untuk mengakses dan memelihara data yang
+
+
+
+             disimpan dalam storage misal harddisk sedangkan Struktur data berada
+
+
+
+             pada level pemrograman dimana merupakan tempat penyimpanan data
+
+
+             yang digunakan oleh program terkait dengan lokasinya di memori (bukan
+
+
+
+             storage/hard disk)]]></page><page Index="23"><![CDATA[Manfaat Struktur Data
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Struktur data dibuat agar cara mempresentasikan data
+
+
+
+
+
+                      dalam membuat program dapat dilakukan secara efisien
+
+
+
+
+
+
+                      dalam                    pengolahan                               di           memori                       dan                pengolahan
+
+
+
+
+
+                      penyimpanan dari program ke storage jiga lebih mudah
+
+
+
+
+
+                      dilakukan. Contoh yang sering anda gunakan: Array.]]></page><page Index="24"><![CDATA[Beberapa Struktur data yang akan kita
+
+
+
+
+            bahas
+
+
+
+
+
+
+
+
+             •        Java ArrayList
+
+
+
+
+
+
+             •        Java LinkedList]]></page><page Index="25"><![CDATA[Java ArrayList
+
+
+
+
+
+
+
+
+
+
+
+             •        The ArrayList class is a resizable array, which can be found in the
+
+
+
+
+                      java.util package.
+
+
+
+
+             •        The difference between a built-in array and an ArrayList in Javais
+
+
+
+
+
+                      that the size of an array cannot be modified (if you want to add or
+
+
+
+                      remove elements to/from an array, you have to create a new one).
+
+
+
+
+                      While elements can be added and removed from an ArrayList
+
+
+
+
+                      whenever you want. The syntax is also slightly different:]]></page><page Index="26"><![CDATA[Example
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Create an ArrayList Object called cars that will store
+
+
+
+
+
+                      strings.]]></page><page Index="27"><![CDATA[Method yang akan dipelajari
+
+
+
+
+
+
+
+
+
+
+
+             •        add (menambahkan)
+
+
+
+
+
+             •        get (mendapatkan)
+
+
+
+
+
+             •        set (mengubah)
+
+
+
+
+
+             •        remove (menghapus)
+
+
+
+
+
+             •        clear (menghapus semua)
+
+
+
+
+
+             •        size (mengetahui ukuran)]]></page><page Index="28"><![CDATA[Add Item
+
+
+
+
+
+
+
+
+
+
+
+
+             •        The ArrayList class has many useful methods. For
+
+
+
+
+
+                      example, to add elements to the ArrayList, use the add()
+
+
+
+
+
+
+                      method:]]></page><page Index="29"><![CDATA[Access an Item
+
+
+
+
+
+
+
+
+
+
+
+
+             •        To access an element in the ArrayList, use the get()
+
+
+
+
+
+                      method and refer to the index number:]]></page><page Index="30"><![CDATA[Change an Item
+
+
+
+
+
+
+
+
+
+
+
+
+             •        To modify an element, use the set() method and refer to
+
+
+
+
+
+                      the index number:]]></page><page Index="31"><![CDATA[Remove an Item
+
+
+
+
+
+
+
+
+
+
+
+             •        To remove an element, use the remove() method and refer to the index
+
+
+
+
+                      number:
+
+
+
+
+
+
+
+
+
+
+             •        To remove all elements in arraylist, you can use clear() method]]></page><page Index="32"><![CDATA[ArrayList Size
+
+
+
+
+
+
+
+
+
+
+
+
+             •        To find out how many elements an ArrayList have, use
+
+
+
+
+
+                      the size method:]]></page><page Index="33"><![CDATA[Loop Through an ArrayList
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Loop through the elements of an ArrayList with a for
+
+
+
+
+
+                      loop, and use the size() method to specify how many
+
+
+
+
+
+
+                      times the loop should run:]]></page><page Index="34"><![CDATA[Loop Through an ArrayList
+
+
+
+
+
+
+
+
+
+
+
+
+             •        You can also loop through an ArrayList with the for-each
+
+
+
+
+
+                      loop:]]></page><page Index="35"><![CDATA[Other Types
+
+
+
+
+
+
+
+
+
+             •        Elements in an ArrayList are actually objects. In the examples above, we created elements (objects) of type
+
+
+
+
+                      "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you
+
+                      must specify an equivalent wrapper class: Integer. For other primitive types, use: Boolean for boolean, Character
+
+
+                      for char, Double for double, etc:
+
+             •        Create an ArrayList to store numbers (add elements of type Integer):]]></page><page Index="36"><![CDATA[Sort an ArrayList
+
+
+
+
+
+
+
+
+
+
+             •        Another useful class in the java.util package is the Collections class, which include the
+
+
+
+
+                      sort() method for sorting lists alphabetically or numerically:
+
+
+             •        Sort an ArrayList of Strings:]]></page><page Index="37"><![CDATA[Java LinkedList
+
+
+
+
+
+
+
+
+
+
+             •        In the previous chapter, you learned about the ArrayList class. The LinkedList class is
+
+
+
+
+                      almost identical to the ArrayList:]]></page><page Index="38"><![CDATA[ArrayList vs. LinkedList
+
+
+
+
+
+
+
+
+
+
+             •        The LinkedList class is a collection which can contain many objects of
+
+
+
+
+                      the same type, just like the ArrayList.
+
+
+
+             •        The LinkedList class has all of the same methods as the ArrayList class
+
+
+
+
+                      because they both implement the List interface. This means that you
+
+
+
+                      can add items, change items, remove items and clear the list in the
+
+
+
+                      same way.
+
+
+
+             •        However, while the ArrayList class and the LinkedList class can be used
+
+
+
+                      in the same way, they are built very differently.]]></page><page Index="39"><![CDATA[How the ArrayList works
+
+
+
+
+
+
+
+
+
+
+
+
+             •        The ArrayList class has a regular array inside it. When
+
+
+
+
+
+                      an element is added, it is placed into the array. If the
+
+
+
+
+
+
+                      array is not big enough, a new, larger array is created to
+
+
+
+
+
+                      replace the old one and the old one is removed.]]></page><page Index="40"><![CDATA[How the LinkedList works
+
+
+
+
+
+
+
+
+
+
+
+
+             •        The LinkedList stores its items in "containers." The list
+
+
+
+
+
+                      has a link to the first container and each container has a
+
+
+
+
+                      link to the next container in the list. To add an element to
+
+
+
+
+
+                      the list, the element is placed into a new container and
+
+
+
+
+
+                      that container is linked to one of the other containers in
+
+
+
+
+                      the list.]]></page><page Index="41"><![CDATA[Gambaran ArrayList Vs LinkedList]]></page><page Index="42"><![CDATA[When To Use
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Use an ArrayList for storing and accessing data, and
+
+
+
+
+
+                      LinkedList to manipulate data.]]></page><page Index="43"><![CDATA[LinkedList Methods
+
+
+
+
+
+
+
+
+
+
+             •        For many cases, the ArrayList is more efficient as it is common to need access to random items in
+
+
+
+                      the list, but the LinkedList provides several methods to do certain operations more efficiently:]]></page><page Index="44"><![CDATA[addFirst
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  import java.util.LinkedList;
+
+
+
+                                                  public class Main {
+
+                                                    public static void main(String[] args) {
+
+                                                      LinkedList<String> cars = new LinkedList<String>();
+                                                      cars.add("Volvo");
+
+                                                      cars.add("BMW");
+
+                                                      cars.add("Ford");
+
+
+
+                                                      // Use addFirst() to add the item to the beginning
+
+                                                      cars.addFirst("Mazda");
+                                                      System.out.println(cars);
+
+                                                    }
+
+                                                  }]]></page><page Index="45"><![CDATA[addLast
+
+
+
+
+
+
+
+
+
+
+
+                                                 import java.util.LinkedList;
+
+
+
+                                                 public class Main {
+
+                                                   public static void main(String[] args) {
+
+                                                     LinkedList<String> cars = new LinkedList<String>();
+                                                     cars.add("Volvo");
+
+                                                     cars.add("BMW");
+
+                                                     cars.add("Ford");
+
+
+
+                                                     // Use addLast() to add the item to the end
+
+                                                     cars.addLast("Mazda");
+
+                                                     System.out.println(cars);
+                                                   }
+
+                                                 }]]></page><page Index="46"><![CDATA[removeFirst()
+
+
+
+
+
+
+
+
+
+
+                                                  import java.util.LinkedList;
+
+
+
+                                                  public class Main {
+
+                                                    public static void main(String[] args) {
+                                                      LinkedList<String> cars = new LinkedList<String>();
+
+                                                      cars.add("Volvo");
+
+                                                      cars.add("BMW");
+
+                                                      cars.add("Ford");
+                                                      cars.add("Mazda");
+
+
+
+
+                                                      // Use removeFirst() remove the first item from the list
+
+                                                      cars.removeFirst();
+                                                      System.out.println(cars);
+
+                                                    }
+
+                                                  }]]></page><page Index="47"><![CDATA[removeLast
+
+
+
+
+
+
+
+
+
+
+
+                                                  import java.util.LinkedList;
+
+
+
+                                                  public class Main {
+
+                                                    public static void main(String[] args) {
+                                                      LinkedList<String> cars = new LinkedList<String>();
+
+                                                      cars.add("Volvo");
+
+                                                      cars.add("BMW");
+
+                                                      cars.add("Ford");
+                                                      cars.add("Mazda");
+
+
+
+
+                                                      // Use removeLast() remove the last item from the list
+
+                                                      cars.removeLast();
+                                                      System.out.println(cars);
+
+                                                    }
+
+                                                  }]]></page><page Index="48"><![CDATA[getFirst
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  import java.util.LinkedList;
+
+
+
+
+                                                  public class Main {
+
+                                                     public static void main(String[] args) {
+
+                                                       LinkedList<String> cars = new
+
+                                                  LinkedList<String>();
+
+                                                       cars.add("Volvo");
+
+                                                       cars.add("BMW");
+
+                                                       cars.add("Ford");
+
+                                                       cars.add("Mazda");
+
+
+
+
+                                                       // Use getFirst() to display the first item in the list
+
+                                                       System.out.println(cars.getFirst());
+
+                                                     }
+
+                                                  }]]></page><page Index="49"><![CDATA[getLast
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  import java.util.LinkedList;
+
+
+
+
+                                                  public class Main {
+
+                                                     public static void main(String[] args) {
+
+                                                       LinkedList<String> cars = new
+
+                                                  LinkedList<String>();
+
+                                                       cars.add("Volvo");
+
+                                                       cars.add("BMW");
+
+                                                       cars.add("Ford");
+
+                                                       cars.add("Mazda");
+
+
+
+
+                                                       // Use getLast() to display the last item in the list
+
+                                                       System.out.println(cars.getLast());
+
+                                                     }
+
+                                                  }]]></page><page Index="50"><![CDATA[Java Iterator
+
+
+
+
+
+
+
+
+
+
+
+
+             •        An Iterator is an object that can be used to loop through
+
+
+
+
+
+                      collections, like ArrayList and HashSet. It is called an
+
+
+
+
+                      "iterator“ because "iterating" is the technical term for
+
+
+
+
+
+                      looping.
+
+
+
+
+
+
+             •        To use an Iterator, you must import it from the java.util
+
+
+
+
+
+                      package.]]></page><page Index="51"><![CDATA[Example
+
+
+
+
+
+
+
+
+
+
+
+
+             •        The iterator() method can be used to get an Iterator for
+
+
+
+
+
+                      any collection:]]></page><page Index="52"><![CDATA[Looping Through a Collection]]></page><page Index="53"><![CDATA[Removing Items from a Collection]]></page><page Index="54"><![CDATA[Java Hashmap
+
+
+
+
+
+
+
+
+
+
+
+
+             •        In the ArrayList chapter, you learned that Arrays store
+
+
+
+
+
+                      items as an ordered collection, and you have to access
+
+
+
+
+
+
+                      them with an index number (int type). A HashMap
+
+
+
+
+
+                      however, store items in "key/value" pairs, and you can
+
+
+
+
+
+                      access them by an index of another type (e.g. a String).]]></page><page Index="55"><![CDATA[Java Hashmap
+
+
+
+
+
+
+
+
+
+
+
+
+             •        import java.util.HashMap; // import the HashMap class
+
+
+
+
+
+
+             •        HashMap<String,                                            String>                        capitalCities                               =             new
+
+
+
+
+
+
+                      HashMap<String, String>();]]></page><page Index="56"><![CDATA[Add Items]]></page><page Index="57"><![CDATA[Access an Items
+
+
+
+
+
+
+
+
+
+
+
+
+             •        capitalCities.get("England");]]></page><page Index="58"><![CDATA[Remove an Item
+
+
+
+
+
+
+
+
+
+
+
+
+             •        capitalCities.remove("England");]]></page><page Index="59"><![CDATA[Remove All
+
+
+
+
+
+
+
+
+
+
+
+
+             •        capitalCities.clear();]]></page><page Index="60"><![CDATA[Hashmap Size
+
+
+
+
+
+
+
+
+
+
+
+
+             •        capitalCities.size();]]></page><page Index="61"><![CDATA[Loop Through a Hashmap
+
+
+
+
+
+
+
+
+
+
+
+             for (String i : capitalCities.keySet()) {
+
+
+
+
+
+                System.out.println(i);
+
+
+
+
+
+             }
+
+
+
+
+
+             for (String i : capitalCities.values()) {
+
+
+
+
+
+                System.out.println(i);
+
+
+
+
+
+             }]]></page><page Index="62"><![CDATA[Perlu Diperhatikan
+
+
+
+
+
+
+
+
+
+
+
+
+             •        HashMap tidak dimaksudkan untuk menyimpan entri dalam
+
+
+
+
+
+                      urutan yang diurutkan , tetapi jika Anda harus mengurutkan
+
+
+
+
+                      HashMap berdasarkan kunci atau nilai, Anda dapat
+
+
+
+
+
+                      melakukannya di Java. Mengurutkan HashMap pada kunci
+
+
+
+
+
+                      cukup mudah, yang perlu Anda lakukan hanyalah membuat
+
+
+
+
+
+                      TreeMap dengan menyalin entri dari HashMap]]></page><page Index="63"><![CDATA[Hashset
+
+
+
+
+
+
+
+
+
+
+
+
+             •        A HashSet is a collection of items where every item is
+
+
+
+
+
+                      unique, and it is found in the java.util package:
+
+
+
+
+
+
+
+             import java.util.HashSet; // Import the HashSet class
+
+
+
+
+
+
+             HashSet<String> cars = new HashSet<String>();]]></page><page Index="64"><![CDATA[Add Items]]></page><page Index="65"><![CDATA[Check if an Item Exist
+
+
+
+
+
+
+
+
+
+
+
+
+             •        cars.contains("Mazda");]]></page><page Index="66"><![CDATA[Remove an Item
+
+
+
+
+
+
+
+
+
+
+
+
+             •        cars.remove("Volvo");]]></page><page Index="67"><![CDATA[Remove All
+
+
+
+
+
+
+
+
+
+
+
+
+             •        cars.clear();]]></page><page Index="68"><![CDATA[Referensi
+
+
+
+
+
+
+
+
+
+
+             •        Liang. (2015). Introduction to Java Programming Comprehensive Version 10 Edition.
+
+
+
+                      Pearson
+
+
+             •        Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+
+             •        Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5 edition. Addison Wesley
+                                                                                                                             th
+
+
+             •        Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar. Bandung : Modula
+
+
+
+             •        Sukamto, R.A. (2018). Struktur Data Terapan Dalam Berbagai Bahasa Pemrograman:
+
+
+
+                      Pascal, C, C++,.dan Java. Bandung : Modula
+
+
+             •        https://www.w3schools.com/]]></page></pages></Search>
