@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="26"><page Index="1"><![CDATA[Pemrograman Berbasis Teks,
+
+
+                     Grafis, dan Multimedia
+
+
+            CRUD JAVA CLI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Johannes Alexander Putra]]></page><page Index="2"><![CDATA[Materi
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Database MySQL
+
+
+
+
+
+
+             •        MySQL Connector
+
+
+
+
+
+
+
+             •        MVC
+
+
+
+
+
+
+             •        CRUD]]></page><page Index="3"><![CDATA[Bagian 1
+
+
+
+
+                                             MySQL]]></page><page Index="4"><![CDATA[MySQL
+
+
+
+
+
+
+
+
+
+
+              •        Basis data (database) merupakan sekumpulan data yang disimpan secara sistematis di dalam
+
+
+
+                       komputer yang nantinya dapat diolah dan dimanipulasi menggunakan software untuk dapat
+
+
+                       menghasilkan informasi. Salah satu basis data yang banyak dipakai adalah MYSQL
+
+
+              •        MySQL ini merupakan singkatan dari My Structured Query Language. MySQL ini merupakan
+
+
+
+
+                       database yang paling favorit saat ini. Program ini berjalan sebagai server yang menyediakan multi-
+
+
+                       user,mengakses ke sejumlah database baik multithread maupun multiuser]]></page><page Index="5"><![CDATA[Kelebihan MySQL
+
+
+
+
+
+
+
+
+
+
+              •        Gratis
+
+
+
+              •        Fleksible dengan berbagai pemrograman
+
+
+
+              •        Keamanan yang baik
+
+
+
+              •        Dukungan dari banyak komunitas
+
+
+
+
+              •        Kemudahan management database
+
+
+
+              •        Mendukung transaksi
+
+
+
+              •        Perkembangan software cukup cepat]]></page><page Index="6"><![CDATA[Bagian 2
+
+
+
+
+                                             MySQL Connector]]></page><page Index="7"><![CDATA[MySQL Connector
+
+
+
+
+
+
+
+
+
+
+
+
+             MySQL Connector biasa disebut sebagai MySQL ODBC
+
+
+
+
+
+             atau MyODBC. MySQL Connector adalah driver untuk
+
+
+
+
+             menghubungkan ke server database MySQL melalui
+
+
+
+
+
+             antarmuka program aplikasi Open Database Connectivity
+
+
+
+
+
+             (ODBC),                          yang                  merupakan                               sarana                       standar                      untuk
+
+
+
+
+             menghubungkan ke database apa pun.]]></page><page Index="8"><![CDATA[Bagian 3
+
+
+
+
+                                             MVC]]></page><page Index="9"><![CDATA[MVC
+
+
+
+
+
+
+
+
+
+
+             •        Konsep MVC (Model-View-Controller) merupakan salah satu penerapan compound design pattern
+
+
+
+                      dalam         pemrograman               berorientasi           objek,        dimana          konsep         ini     membedakan                kelas-kelas
+
+
+                      yang merepresentasikan data (Model) dengan kelas-kelas yang mengatur tampilan program (View)
+
+
+                      dan kelas-kelas pengaturan data (Controller).]]></page><page Index="10"><![CDATA[Model
+
+
+
+
+
+
+
+
+
+
+             •        Bagian         Model        pada        Java        menggambarkan                  struktur        data       pada        database.          Bagian         ini
+
+
+
+                      direpresentasikan oleh POJO (Plain Old Java Object), yaitu kelas Java biasa yang lengkap dengan
+
+
+                      property (atribut) dan method getter-setter terhadap atribut-atributnya. Biasanya tidak memiliki
+
+
+                      method lain selain getter-setter. Contoh: Kelas Mahasiswa yang memiliki atribut: nip, nama,
+
+
+                      jenisKelamin, alamat. Kelas Mahasiswa hanya memiliki method getter-setter yang sesuai dengan
+
+
+
+                      atributnya yaitu: getNip, setNip, getNama, setNama, getJenisKelamin, setJenisKelamin, getAlamat,
+
+
+                      setAlamat.]]></page><page Index="11"><![CDATA[View
+
+
+
+
+
+
+
+
+
+
+             •        Bagian View merupakan kelas-kelas yang mengimplementasikan user interface dari program yang
+
+
+
+                      dibangun. Bagian inilah yang dilihat oleh user dan menjadi media user untuk berinteraksi. Setiap
+
+
+                      ada request atau aksi yang diminta oleh user yang berhubungan dengan data akan diteruskan ke
+
+
+                      bagian controller yang sesuai.]]></page><page Index="12"><![CDATA[Controller
+
+
+
+
+
+
+
+
+
+
+             •        Bagian Controller merupakan kelas-kelas yang mengendalikan alur program secara keseluruhan,
+
+
+
+                      mengandung business logic, dan sebagai penghubung antara view dengan model dan dao. Kelas ini
+
+
+                      akan merespon permintaan atau aksi dari view ke kelas dao yang diinginkan.]]></page><page Index="13"><![CDATA[DAO (di Projek nanti DAO langsung saja
+
+
+
+
+            digabung dengan Controller)
+
+
+
+
+
+             •        Bagian DAO (Data Access Object) merupakan kelas-kelas yang melakukan manipulasi data yang
+
+
+
+                      terdapat pada database. Manipulasi bisa berupa Create, Read, Update, atau Delete (CRUD).
+
+
+                      Bagian ini terhubung ke Model (karena merupakan representasi data) dan Database (untuk
+
+
+                      mendapatkan koneksi).]]></page><page Index="14"><![CDATA[Bagian 4
+
+
+
+
+                                             CRUD]]></page><page Index="15"><![CDATA[Connection
+
+
+
+
+
+
+                                             Class  Connection merupakan  class  yang berfungsi untuk menghubungkan
+                                             aplikasi ke database
+
+                                             import java.sql.*;
+
+                                             public class ConnectionDB {
+
+                                                 // Menyiapkan paramter JDBC untuk koneksi ke database
+                                                 static String DB="jdbc:mysql://localhost/si_tokohp"; // si_tokohp database
+                                                 static String user="root"; // user database
+                                                 static String pass=""; // password database
+                                                 private static Connection con;
+
+                                                 public static Connection getConnection() throws SQLException {
+                                                     if(con==null){
+                                                         try {
+                                                             DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+                                                             con = (Connection) DriverManager.getConnection(DB,user,pass);
+                                                         } catch (Exception e) {
+                                                             System.out.println("Database connection is failed");
+                                                         }
+                                                     }
+
+                                                    return con;
+                                                 }
+                                             }]]></page><page Index="16"><![CDATA[CRUD
+
+
+
+
+
+
+
+
+
+
+             •        CRUD adalah singkatan dari Create, Read, Update, dan Delete. Keempat hal tersebut merupakan
+
+
+
+                      perintah dengan peran yang esensial dalam sebuah aplikasi database yang sifatnya relational.]]></page><page Index="17"><![CDATA[Create
+
+
+
+
+
+
+
+
+
+
+             •        Fungsi Create berguna untuk membuat entri atau record baru dalam
+
+
+
+
+                      sebuah tabel di dalam database. Di dalam aplikasi berbasis SQL, fungsi
+
+
+
+
+                      create seringkali disebut dengan insert.]]></page><page Index="18"><![CDATA[Create
+
+
+
+
+
+
+
+
+
+
+                                                Berikut potongan syntax create
+
+                                                Connection conDB = ConnectionDB.getConnection();
+
+                                                            String         sql      =       "INSERT            INTO          product_hp
+                                                (productCategory,productName,price,qty)                                          VALUES
+
+                                                (?,?,?,?)";
+
+                                                            PreparedStatement                                     ps                         =
+                                                conDB.prepareStatement(sql);
+
+                                                            ps.setString(1, product.getProductCategory());
+
+                                                            ps.setString(2, product.getProductName());
+
+                                                            ps.setDouble(3, product.getPrice());
+                                                            ps.setInt(4, product.getQty());
+
+                                                            ps.executeUpdate();]]></page><page Index="19"><![CDATA[Read
+
+
+
+
+
+
+
+
+
+
+             •        Fungsi Create berguna untuk membuat entri atau record baru
+
+
+
+
+
+                      dalam sebuah tabel di dalam database. Di dalam aplikasi
+
+
+
+
+
+                      berbasis SQL, fungsi create seringkali disebut dengan insert.]]></page><page Index="20"><![CDATA[Read
+
+
+
+
+
+
+                                                                 //List merupakan interface yang diimplement menjadi ArrayList,
+                                                                 //LinkedList,dll. https://www.javatpoint.com/java-list
+
+
+                                                                 List<Product> listProduct = new ArrayList<Product>();
+
+
+                                                                       try{
+                                                                          Connection conDB = ConnectionDB.getConnection();
+
+                                                                          String sql = "SELECT * FROM product_hp";
+                                                                          PreparedStatement ps = conDB.prepareStatement(sql);
+                                                                          ResultSet rs = ps.executeQuery();
+
+
+                                                                          while(rs.next()){
+                                                                             Product product = new Product();
+                                                                             product.setProductId(rs.getInt("productId"));
+
+
+                                                                 product.setProductCategory(rs.getString("productCategory"));
+
+
+
+                                                                 product.setProductName(rs.getString("productName"));
+                                                                             product.setPrice(rs.getInt("price"));
+                                                                             product.setQty(rs.getInt("qty"));
+
+
+                                                                             listProduct.add(product);
+                                                                          }]]></page><page Index="21"><![CDATA[Update
+
+
+
+
+
+
+
+
+
+                    Fungsi update ini berperan penting untuk memperbarui
+
+
+                    entri data ketika informasi di dalamnya memerlukan
+
+
+
+                    perubahan. Dengan fungsi ini, kamu dapat mengubah
+
+
+                    detail dari sebuah entri di database.]]></page><page Index="22"><![CDATA[Update
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         Berikut potongan syntax update
+                                         Connection conDB =  ConnectionDB.getConnection();
+
+                                                     String  sql  =  "UPDATE  product_hp  SET  productCategory  =?,
+                                         productName=?, price=?, qty=? WHERE productId=?";
+
+                                                     PreparedStatement ps = conDB.prepareStatement(sql);
+                                                     ps.setString(1, product.getProductCategory());
+
+                                                     ps.setString(2, product.getProductName());
+
+                                                     ps.setDouble(3, product.getPrice());
+                                                     ps.setInt(4, product.getQty());
+
+                                                     ps.setInt(5, product.getProductId());
+                                                     ps.executeUpdate();]]></page><page Index="23"><![CDATA[Delete
+
+
+
+
+
+
+
+
+
+
+
+
+             •        Seperti namanya, fungsi delete ini berguna untuk
+
+
+
+
+
+                      menghapus entri data yang sudah tidak diperlukan
+
+
+
+
+                      dalam sebuah database. Ketika menggunakan fungsi
+
+
+
+
+
+                      ini, kamu akan mengakses detail terkait sebuah entri
+
+
+
+
+
+                      dan kemudian memberikan perintah kepada sistem
+
+
+
+
+                      untuk menghilangkannya dari database.]]></page><page Index="24"><![CDATA[Delete
+
+
+
+
+
+
+
+
+
+
+
+             Berikut potongan syntax delete
+
+
+
+             try {
+
+
+                         Connection conDB = ConnectionDB.getConnection();
+
+
+
+                         String sql = "DELETE FROM product_hp WHERE productId=?";
+
+
+                         PreparedStatement ps = conDB.prepareStatement(sql);
+
+
+
+                         ps.setInt(1, product.getProductId());
+
+
+
+                         ps.executeUpdate();
+
+
+                         System.out.println("Data has been delete");
+
+
+
+                     }]]></page><page Index="25"><![CDATA[Referensi
+
+
+
+
+
+
+
+
+
+
+             •        Liang. (2015). Introduction to Java Programming Comprehensive
+
+
+
+
+                      Version 10 Edition. Pearson
+
+
+
+             •        Cay S. Horstmann. (2013). Big Java: Early Objects 5th edition. Willey.
+
+
+
+
+             •        Walter J. Savitch & Kenrick Mock. (2012). Absolute Java 5                                                                                  th   edition.
+
+
+
+
+                      Addison Wesley
+
+
+
+             •        Sukamto, R.A. (2018). Logika Algoritma dan Pemrograman Dasar.
+
+
+
+
+                      Bandung : Modula]]></page><page Index="26"><![CDATA[Terima Kasih]]></page></pages></Search>
